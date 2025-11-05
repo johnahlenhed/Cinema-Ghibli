@@ -1,0 +1,112 @@
+:root {
+    font-family: libre baskerville, serif;
+    --dark-font-color: #FFFDF9;
+    --dark-background: #061524;
+    --dark-nav: #084D75;
+    --dark-container: #13273B;
+    --dark-line: #E65478;
+    --dark-date-tick: #6F7FB3;
+    --dark-bg-tick: #131F44;
+    --dark-cta: #E65478;
+
+
+
+    --light-background: #FDEED7;
+    --light-font-color: #113E58;
+    --light-nav: #033856;
+    --light-container: #FFF5E5;
+    --light-line: #109CEB;
+    --light-date-tick: #A9DDFB;
+    --light-bg-tick: #C7E2DB;
+    --light-cta: #E65478;
+
+    --button-color: #ffffff;
+
+}
+
+body {
+    margin: 0;
+}
+
+@media screen and (max-width: 430px) {
+    body {
+        background-color: var(--dark-background);
+        font-size: 14px;
+        color: var(--dark-font-color);
+    }
+
+    .navbar {
+    background-color: var(--dark-nav);
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 0 2rem;
+    }
+
+    nav img {
+        height: 1.8rem;
+    }
+
+    .menu-icon {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .mobile-menu {
+        background-color: var(--dark-container);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+
+    .mobile-menu-links {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .mobile-menu-logo {
+        position: absolute;
+        height: 1.8rem;
+        top: 1.1rem;
+        left: 2rem;
+    }
+
+    .mobile-menu.active {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .mobile-menu > div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    }
+
+    .mobile-menu a {
+    color: var(--dark-font-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+    }
+
+    .mobile-menu .menu-icon {
+    position: absolute;
+    top: 1.4rem;
+    right: 2rem;
+    }
+    
+}
