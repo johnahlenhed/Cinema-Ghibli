@@ -1,27 +1,32 @@
 :root {
-    font-family: libre baskerville, serif;
-    --dark-font-color: #FFFDF9;
-    --dark-background: #061524;
-    --dark-nav: #084D75;
-    --dark-container: #13273B;
-    --dark-line: #E65478;
-    --dark-date-tick: #6F7FB3;
-    --dark-bg-tick: #131F44;
-    --dark-cta: #E65478;
+   font-family: libre baskerville, serif;
+
+   /* darkmode colors */
+   --dark-font-color: #FFFDF9;
+   --dark-secondary-title: #8DABCA;
+   --dark-background: #061524;
+   --dark-nav: #084D75;
+   --dark-container: #13273B;
+   --dark-line: #E65478;
+   --dark-date-container: #6F7FB3;
+   --dark-time-container: #8DABCA;
+   --dark-letter-container: #507498;
 
 
+   /* lightmode colors */
+   --light-font-color: #113E58;
+   --light-secondary-title: #504D47;
+   --light-background: #FDEED7;
+   --light-nav: #033856;
+   --light-container: #FFF5E5;
+   --light-line: #109CEB;
+   --light-date-container: #A9DDFB;
+   --light-time-border: #113E58;
+   --light-time-container: #D9E8DE;
+   --light-letter-container: #A0C3E6;
 
-    --light-background: #FDEED7;
-    --light-font-color: #113E58;
-    --light-nav: #033856;
-    --light-container: #FFF5E5;
-    --light-line: #109CEB;
-    --light-date-tick: #A9DDFB;
-    --light-bg-tick: #C7E2DB;
-    --light-cta: #E65478;
-
-    --button-color: #ffffff;
-
+   --cta: #E65478;
+   --button-color: #ffffff; 
 }
 
 body {
