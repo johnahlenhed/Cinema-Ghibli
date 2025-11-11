@@ -1,0 +1,26 @@
+section {
+    border: 3px red solid;
+    background-color: var(--dark-container);
+}
+
+.booking{
+
+}
+
+.cast{
+    display: flex;
+}
+
+
+.synopsis{
+
+}
+
+.container {
+
+}
+
+.container div {
+    background-color: red;
+    display: inline-block
+}
