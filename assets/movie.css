@@ -44,9 +44,17 @@ section {
 
 }
 
+.ticket div {
+    display: inline-block;
+    border: 2px solid var(--dark-date-tick);
+    border-radius: 10px;
+    padding: 4px 24px;
+    margin: 20px;
+    text-align: center;
 }
 
-.container div {
-    background-color: red;
-    display: inline-block
+.line {
+    width: 80px;
+    height: 2px;
+    background-color: var( --dark-line);
 }
