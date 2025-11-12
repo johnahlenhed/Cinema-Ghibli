@@ -8,27 +8,28 @@
         <span>7+</span>
         <span>Adventure, Family</span>
     </section>
-    <section class="trailer">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ByXuk9QqQkk?si=GbP3280hGcEmbPSS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </section>
+    <div class="trailer">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ByXuk9QqQkk?si=qdcTF4G70ObH7q03" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <section class="synopsis">
         <h2>Synopsis:</h2>
+        <span class="line"></span>
         <p>When you think you've lost your way, you may have just found your way. </p>
         <p>10-year-old Chihiro is on her way to a new home with her parents when they 
             accidentally take a detour - straight into a world unlike anything she has 
-            known before. 
-            When night falls, the place transforms into a bathhouse for spirits and supernatural 
+            known before. </p> 
+        <p> When night falls, the place transforms into a bathhouse for spirits and supernatural 
             beings. Her parents have turned into pigs, and Chihiro is suddenly alone in a world 
             where the rules are incomprehensible and danger hides in the shadows. 
             But in the middle of this enchanted world, she meets Haku - an enigmatic 
             boy who becomes her ally. He warns her: if she forgets her name, she also forgets who 
-            she is - and then she is trapped in the spirit world forever. 
-            To survive and find her way back home, Chihiro must find the courage to stand up for 
+            she is - and then she is trapped in the spirit world forever. </p>  
+        <p> To survive and find her way back home, Chihiro must find the courage to stand up for 
             herself, and preserve the memory of who she once was.</p>
     </section>
     <br>
     <section class="cast">
         <h2>Cast:</h2>
+        <span class="line"></span>
         <div>
             <p>Director/Writer:</p>
             <p>Hayao Miyazaki</p>
@@ -73,7 +74,8 @@
     <br>
     <section class="booking">
         <h2>Tickets:</h2>
-        <div class="container">
+        <span class="line"></span>
+        <div class="ticket">
             <div>
                 <p>Tuseday</p>
                 <p>7th nov</p>
@@ -91,7 +93,7 @@
         <br>
 
         <h4>JP voice, ENG text</h4>
-        <div class="container">
+        <div class="ticket">
             <div>
                 <p>18:45</p>
                 <p>5th hall</p>
@@ -102,7 +104,7 @@
         <br>
 
         <h4>ENG voice</h4>
-        <div class="container">
+        <div class="ticket">
             <div>
                 <p>13:00</p>
                 <p>5rd hall</p>
