@@ -1,13 +1,33 @@
-section {
+/* - GENNERL - */
+
+*{
     border: 1px red solid;
-    background-color: var(--dark-container);
+}
+
+section {
     padding: 2rem;
-    margin: 10px 0 10px 0;
+    margin: 0.5rem 0 0.5rem 0;
 }
 
-.booking{
-
+.cast, .booking, .synopsis {
+    background-color: var(--container);
 }
+
+.line {
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: var( --line);
+    margin-bottom: 1rem;
+}
+
+/* - TYPOGRPHY - */
+
+h2 {
+    margin: 0;
+}
+
+/* - CAST - */
 
 .cast {
     display: flex;
@@ -40,21 +60,48 @@ section {
 
 }
 
-.ticket {
 
-}
+/* - BOOKING - */
 
-.ticket div {
+.booking button {
     display: inline-block;
-    border: 2px solid var(--dark-date-tick);
+    border: 2px solid var(--date-tick);
     border-radius: 10px;
     padding: 4px 24px;
     margin: 20px;
     text-align: center;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
 }
 
-.line {
-    width: 80px;
-    height: 2px;
-    background-color: var( --dark-line);
+.booking p{
+    color: var(--font-color);
+}
+
+/* date button */
+
+.date button:hover {
+    border: 2px solid var(--font-color);
+}
+
+.date button {
+  background-color:var(--container);
+}
+
+.date button.active{
+  background-color: var(--date-tick);
+}
+
+/* time button */
+
+.time button:hover {
+    border: 2px solid var(--font-color);
+}
+
+.time button {
+  background-color:var(--bg-tick);
+}
+
+.time button:focus {
+  background-color:var(--date-tick);
 }
