@@ -75,48 +75,50 @@
     <section class="booking">
         <h2>Tickets:</h2>
         <span class="line"></span>
-        <div class="ticket">
-            <div>
+        <div class="date">
+            <button>
                 <p>Tuseday</p>
                 <p>7th nov</p>
-            </div>
-            <div>
+            </button>
+            <button>
                 <p>Wednesday</p>
                 <p>8th nov</p>
-            </div>
-            <div>
+            </button>
+            <button>
                 <p>Sunday</p>
                 <p>11th nov</p>
-            </div>
+            </button>
         </div>
 
         <br>
 
         <h4>JP voice, ENG text</h4>
-        <div class="ticket">
-            <div>
+        <div class="time">
+            <button>
                 <p>18:45</p>
                 <p>5th hall</p>
                 <p>30/40</p>
-            </div>
+            </button>
         </div>
 
         <br>
 
         <h4>ENG voice</h4>
-        <div class="ticket">
-            <div>
+        <div class="time">
+            <button>
                 <p>13:00</p>
                 <p>5rd hall</p>
                 <p>20/40</p>
-            </div>
-            <div>
+            </button>
+            <button>
                 <p>20:00</p>
                 <p>3rd hall</p>
                 <p>40/60</p>
-            </div>
+            </button>
         </div>
     </section>
 </main>
+
+<script src="/assets/booking.js"></script>
 
 <?php include __DIR__ . '/includes/footer.php'; ?>
