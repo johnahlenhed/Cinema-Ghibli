@@ -32,11 +32,6 @@ h2 {
 .cast {
     display: flex;
     flex-direction: column; 
-    gap: 20px; 
-}
-
-.cast h2 {
-    margin-bottom: 10px;
 }
 
 .cast div {
@@ -45,16 +40,22 @@ h2 {
     flex-wrap: wrap;
     height: 200px; 
     gap: 10px;
+    margin-top: 20px;
 }
 
 .cast > div p {
     margin: 2px;
 }
 
+
+/* - TRAILER - */
+
 .trailer {
     width: 100vw; 
     height: 50vw;
 }
+
+/* - SYNOPSIS - */
 
 .synopsis{
 

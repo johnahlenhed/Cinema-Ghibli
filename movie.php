@@ -119,4 +119,6 @@
     </section>
 </main>
 
+<script src="/assets/booking.js"></script>
+
 <?php include __DIR__ . '/includes/footer.php'; ?>
