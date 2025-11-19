@@ -13,7 +13,8 @@
             <img src="/assets/images/cinema-ghibli-logo-light.svg" alt="">
         </div>
         <div class="hero-text-content">
-            <p>SET SLIDESHOW AS BG-IMAGE!</p>
+            <p><i>Enter a place where soot sprites dance, forests whisper, and skies stretch endlessly. 
+                Our cinema is devoted exclusively to Studio Ghibli films, offering a cozy sanctuary for fans to reconnect with the magic of animation.</i></p>
         </div>
 
         <div class="hero-buttons">

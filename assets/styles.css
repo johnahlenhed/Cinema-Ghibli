@@ -10,7 +10,7 @@
   --date-tick: #a9ddfb;
   --bg-tick: #c7e2db;
   --cta: #e65478;
-  --hero-bg: #3e727a62;
+  --hero-bg: #3e727a89;
 
   --button-color: #ffffff;
 }
@@ -25,7 +25,7 @@
   --date-tick: #6f7fb3;
   --bg-tick: #131f44;
   --cta: #e65478;
-  --hero-bg: #3e727a62;
+  --hero-bg: #3e727a89;
 
   --button-color: #ffffff;
 }
@@ -215,7 +215,7 @@ nav img {
   color: var(--font-color);
   border: 2px solid var(--font-color);
   text-align: center;
-  height: 60px;
+  height: 45px;
   width: 130px;
   font-size: 1rem;
   cursor: pointer;
@@ -228,7 +228,7 @@ nav img {
   color: var(--font-color);
   border: 2px solid var(--font-color);
   text-align: center;
-  height: 60px;
+  height: 45px;
   width: 130px;
   font-size: 1rem;
   cursor: pointer;
