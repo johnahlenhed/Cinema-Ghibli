@@ -73,27 +73,6 @@
                 <p>Daveigh Chase as Chihiro</p>
 
                 <p>Jason Marsden as Haku</p>
-            <p>Suzanne Pleshette as Yubāba/Zeniiba</p>
-        </div>
-    </section>
-
-    <section class="booking">
-        <h2>Tickets:</h2>
-        <span class="line"></span>
-        <div class="date">
-            <button>
-                <p>Tuseday</p>
-                <p>7th nov</p>
-            </button>
-            <button>
-                <p>Wednesday</p>
-                <p>8th nov</p>
-            </button>
-            <button>
-                <p>Sunday</p>
-                <p>11th nov</p>
-            </button>
-        </div>
 
                 <p>Suzanne Pleshette as Yubāba/Zeniiba</p>
             </div>
