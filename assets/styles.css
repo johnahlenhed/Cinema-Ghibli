@@ -11,6 +11,9 @@
   --bg-tick: #c7e2db;
   --cta: #e65478;
   --hero-bg: #3e727a89;
+  --border-color: #033856;
+  --footer-font-color: #FDEED7;
+  --email-cta-bg: #109CEB;
 
   --button-color: #ffffff;
 }
@@ -26,6 +29,9 @@
   --bg-tick: #131f44;
   --cta: #e65478;
   --hero-bg: #3e727a89;
+  --border-color: #FDEED7;
+  --footer-font-color: #FDEED7;
+  --email-cta-bg: #507498;
 
   --button-color: #ffffff;
 }
@@ -274,14 +280,107 @@ main {
   width: 100%;
 }
 
+.current-movie-container {
+  background-color: var(--container);
+  width: 100%;
+  padding: 1rem 0 0.8rem;
+  overflow-x: auto;
+  display: flex;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+}
+
+.current-movie-carousel {
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.current-movie-carousel img {
+  width: auto;
+  height: 300px;
+  margin: 0;
+}
+
+.airing-soon-container {
+  background-color: var(--container);
+  width: 100%;
+  padding: 1rem 0 0.8rem;
+  overflow-x: auto;
+  display: flex;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+}
+
+.airing-soon-carousel {
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.airing-soon-carousel img {
+  width: auto;
+  height: 300px;
+  margin: 0;
+}
+
+.offer-container {
+  background-color: var(--cta);
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: 0.450rem solid var(--border-color);
+}
+
+.offer-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  border-radius: 3px 3px 0 0;
+}
+
+.offer-container h2 {
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.offer-container p {
+  color: white;
+  text-align: center;
+  padding: 0 1rem 1rem;
+}
+
+.cta-container {
+  background-color: var(--email-cta-bg);
+  color: var(--font-color);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: 0.450rem solid var(--border-color);
+  margin-top: 1rem;
+}
+
 footer {
   background-color: var(--nav);
+  color: var(--font-color);
   height: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
-  color: var(--font-color);
+  color: var(--footer-font-color);
 }
 
 
