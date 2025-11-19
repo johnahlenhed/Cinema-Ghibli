@@ -5,7 +5,6 @@
 </head>
 <main>
     <section>
-
         <h1>Spirited Away</h1>
         <span>7+</span>
         <span>Adventure, Family</span>
@@ -32,7 +31,7 @@
             herself, and preserve the memory of who she once was.</p>
     </section>
     <br>
-    <section class="castBookingContainer">
+    <div class="castBookingContainer">
         <section class="cast">
             <h2>Cast:</h2>
             <span class="line"></span>
@@ -123,7 +122,7 @@
                 </button>
             </div>
         </section>
-    </section>
+    </div>
 </main>
 
 <script src="/assets/booking.js"></script>

@@ -4,6 +4,10 @@
     border: 1px red solid;
 } */
 
+main{
+    margin-bottom: 2rem;
+}
+
 section {
     margin: 1rem 0 1rem 0;
     padding: 2rem;
@@ -11,7 +15,7 @@ section {
 
 @media screen and (min-width: 800px) {
     section {
-        margin: 2rem 0 2rem 0;
+        margin: 1rem 0 1rem 0;
     }
 }
 
@@ -25,7 +29,7 @@ section {
     width: 100px;
     height: 2px;
     background-color: var( --line);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 /* - TYPOGRPHY - */
@@ -62,7 +66,7 @@ h2 {
         display: flex;
         justify-self: center;
         justify-content: space-between;
-        gap: 2rem
+        gap: 1rem
         ;
     }
 
@@ -80,6 +84,7 @@ h2 {
 .trailer {
     width: 100vw; 
     height: 50vh;
+    margin: 3rem 0;
 }
 
 @media screen and (min-width: 800px) {
@@ -95,10 +100,6 @@ h2 {
     flex-direction: column;
     gap: 4px;
     width: 100%;
-}
-
-.synopsis .line{
-    margin: 0 0 2rem;
 }
 
 
