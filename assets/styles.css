@@ -37,6 +37,12 @@ body {
   margin: 0;
 }
 
+@media screen and (min-width: 800px) {
+  body {
+    font-size: 18px;
+  }
+}
+
 .navbar {
   background-color: var(--nav);
   height: 4rem;

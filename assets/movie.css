@@ -82,6 +82,11 @@ h2 {
     height: 50vh;
 }
 
+@media screen and (min-width: 800px) {
+    .trailer{
+        height: 80vh;
+    }
+}
 /* - SYNOPSIS - */
 
 .synopsis p{
