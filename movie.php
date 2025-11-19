@@ -11,10 +11,10 @@
 
     </section>
 
-    <div class="trailer">
+    <div class="trailer" id="infoContainer">
         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ByXuk9QqQkk?si=qdcTF4G70ObH7q03" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-    <section class="synopsis">
+    <section class="synopsis" id="infoContainer">
         <h2>Synopsis:</h2>
         <span class="line"></span>
         <p>When you think you've lost your way, you may have just found your way. </p>
@@ -32,7 +32,7 @@
     </section>
     <br>
     <div class="castBookingContainer">
-         <section class="cast">
+        <section class="cast" id="infoContainer">
             <h2>Cast:</h2>
             <span class="line"></span>
             <div class="castTable">
@@ -110,9 +110,9 @@
                 </table>
             </div>
         </section>
-    </div>
-    <br>
-        <section class="booking">
+    
+        <br>
+        <section class="booking" id="infoContainer">
             <h2>Tickets:</h2>
             <span class="line"></span>
             <div class="date">
