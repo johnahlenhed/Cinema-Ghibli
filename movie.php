@@ -31,48 +31,48 @@
         <p> To survive and find her way back home, Chihiro must find the courage to stand up for
             herself, and preserve the memory of who she once was.</p>
     </section>
+    <br>
+    <section class="castBookingContainer">
+        <section class="cast">
+            <h2>Cast:</h2>
+            <span class="line"></span>
+            <div>
+                <p>Director/Writer:</p>
+                <p>Hayao Miyazaki</p>
 
-    <section class="cast">
-        <h2>Cast:</h2>
-        <span class="line"></span>
-        <div>
-            <p>Director/Writer:</p>
-            <p>Hayao Miyazaki</p>
+                <p>Producer:</p>
+                <p>Toshio Suzuki</p>
 
-            <p>Producer:</p>
-            <p>Toshio Suzuki</p>
+                <p>Music:</p>
+                <p>Joe Hisaishi</p>
 
-            <p>Music:</p>
-            <p>Joe Hisaishi</p>
+                <br>
 
-            <br>
+                <p>Japanese voices:</p>
 
-            <p>Japanese voices:</p>
+                <p>Rumi Hiiragi as Chihiro</p>
 
-            <p>Rumi Hiiragi as Chihiro</p>
+                <p>Miyu Irino as Haku</p>
 
-            <p>Miyu Irino as Haku</p>
+                <p>Mari Natsuki as Yubāba/Zeniiba</p>
+            </div>
+            <div>
+                <p>Original language: </p>
+                <p>Japanese</p>
 
-            <p>Mari Natsuki as Yubāba/Zeniiba</p>
-        </div>
-        <div>
-            <p>Original language: </p>
-            <p>Japanese</p>
+                <p>Runtime:</p>
+                <p>2h 5m</p>
 
-            <p>Runtime:</p>
-            <p>2h 5m</p>
+                <p>Release year:</p>
+                <p>20 July 2001</p>
 
-            <p>Release year:</p>
-            <p>20 July 2001</p>
+                <br>
 
-            <br>
+                <p>English voices:</p>
 
-            <p>English voices:</p>
+                <p>Daveigh Chase as Chihiro</p>
 
-            <p>Daveigh Chase as Chihiro</p>
-
-            <p>Jason Marsden as Haku</p>
-
+                <p>Jason Marsden as Haku</p>
             <p>Suzanne Pleshette as Yubāba/Zeniiba</p>
         </div>
     </section>
@@ -95,32 +95,55 @@
             </button>
         </div>
 
+                <p>Suzanne Pleshette as Yubāba/Zeniiba</p>
+            </div>
+        </section>
         <br>
-
-        <h4>JP voice, ENG text</h4>
-        <div class="time">
-            <button>
-                <p>18:45</p>
-                <p>5th hall</p>
-                <p>30/40</p>
-            </button>
-        </div>
-
-        <br>
-
-        <h4>ENG voice</h4>
-        <div class="time">
-            <button>
-                <p>13:00</p>
-                <p>5rd hall</p>
-                <p>20/40</p>
-            </button>
-            <button>
-                <p>20:00</p>
-                <p>3rd hall</p>
-                <p>40/60</p>
-            </button>
-
+        <section class="booking">
+            <h2>Tickets:</h2>
+            <span class="line"></span>
+            <div class="date">
+                <button>
+                    <p>Tuseday</p>
+                    <p>7th nov</p>
+                </button>
+                <button>
+                    <p>Wednesday</p>
+                    <p>8th nov</p>
+                </button>
+                <button>
+                    <p>Sunday</p>
+                    <p>11th nov</p>
+                </button>
+            </div>
+    
+            <br>
+    
+            <h4>JP voice, ENG text</h4>
+            <div class="time">
+                <button>
+                    <p>18:45</p>
+                    <p>5th hall</p>
+                    <p>30/40</p>
+                </button>
+            </div>
+    
+            <br>
+    
+            <h4>ENG voice</h4>
+            <div class="time">
+                <button>
+                    <p>13:00</p>
+                    <p>5rd hall</p>
+                    <p>20/40</p>
+                </button>
+                <button>
+                    <p>20:00</p>
+                    <p>3rd hall</p>
+                    <p>40/60</p>
+                </button>
+            </div>
+        </section>
     </section>
 </main>
 
