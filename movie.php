@@ -4,10 +4,11 @@
     <link rel="stylesheet" href="/assets/movie.css">
 </head>
 <main>
-    <section>
+    <section class="movieTitle">
         <h1>Spirited Away</h1>
-        <span>7+</span>
-        <span>Adventure, Family</span>
+        <span class="ageRating">7+</span>
+        <span class="movieGenre">Adventure,</span>
+        <span class="movieGenre">Family</span>
 
     </section>
 
