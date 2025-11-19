@@ -264,6 +264,20 @@ nav img {
   animation: heroAnimation2 15s infinite;
 }
 
+main {
+  width: 100%;
+}
+
+footer {
+  background-color: var(--nav);
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  color: var(--font-color);
+}
+
 
 
 @keyframes heroAnimation1 {
