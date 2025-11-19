@@ -1,12 +1,18 @@
 /* - GENNERL - */
 
-*{
+/* *{
     border: 1px red solid;
-}
+} */
 
 section {
-    margin: 0.5rem 0 0.5rem 0;
+    margin: 1rem 0 1rem 0;
     padding: 2rem;
+}
+
+@media screen and (min-width: 800px) {
+    section {
+        margin: 2rem 0 2rem 0;
+    }
 }
 
 
@@ -78,8 +84,16 @@ h2 {
 
 /* - SYNOPSIS - */
 
-.synopsis{
+.synopsis p{
+    margin: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
     width: 100%;
+}
+
+.synopsis .line{
+    margin: 0 0 2rem;
 }
 
 
