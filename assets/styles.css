@@ -1,5 +1,5 @@
 :root {
-  font-family: "Libre Baskerville", serif;
+  --font-family: "Libre Baskerville", serif;
 
   --background: #fdeed7;
   --font-color: #113e58;
@@ -34,6 +34,10 @@
   --email-cta-bg: #507498;
 
   --button-color: #ffffff;
+}
+
+*{
+  box-sizing: border-box;
 }
 
 body {

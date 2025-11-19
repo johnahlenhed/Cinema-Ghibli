@@ -6,21 +6,23 @@
 
 main{
     margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 section {
     margin: 1rem 0 1rem 0;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 @media screen and (min-width: 800px) {
     section {
-        margin: 1rem 0 1rem 0;
+        margin: 1rem 1rem;
     }
 }
 
-
-.cast, .booking, .synopsis {
+#infoContainer {
     background-color: var(--container);
 }
 
@@ -85,43 +87,69 @@ h2 {
 
 .cast {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
-.cast div {
+.castTable {
     display: flex;
-    flex-direction: column; 
-    flex-wrap: wrap;
-    height: 200px; 
-    gap: 10px;
-    margin-top: 20px;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
+    text-align: left;
 }
 
-.cast > div p {
-    margin: 2px;
+.castTable table {
+    border-collapse: collapse;
 }
 
+table th, table td {
+    padding: 0.8rem ;
+}
+
+table td {
+    padding-bottom: 1.5rem;
+}
 
 @media screen and (min-width: 800px) {
     
     .castBookingContainer {
-        width: 100vw;
         display: flex;
-        justify-self: center;
+        flex-wrap: wrap;
         justify-content: space-between;
-        gap: 1rem
-        ;
+        width: 100%;
     }
 
-    .cast, .booking{
-        width: 40rem;
+    .cast, .booking {
+        width: 47%; 
+        height: 46rem;
     }
-
-    .cast{
-        width: 40rem;
-    }
-
 }
+
+/* - TRAILER - */
+
+.trailer {
+    width: 97vw; 
+    height: 35vh;
+    margin: 2rem 0
+}
+
+@media screen and (min-width: 800px) {
+    .trailer{
+        height: 80vh;
+        margin: 2rem 0;
+    }
+}
+
+/* - SYNOPSIS - */
+
+.synopsis p{
+    margin: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+}
+
 
 /* - BOOKING - */
 
@@ -134,6 +162,7 @@ h2 {
     text-align: center;
     transition-duration: 300ms;
     transition-timing-function: ease;
+    font-family: var(--font-family);
 }
 
 .booking p{

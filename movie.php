@@ -12,10 +12,10 @@
 
     </section>
 
-    <div class="trailer">
+    <div class="trailer" id="infoContainer">
         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ByXuk9QqQkk?si=qdcTF4G70ObH7q03" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-    <section class="synopsis">
+    <section class="synopsis" id="infoContainer">
         <h2>Synopsis:</h2>
         <span class="line"></span>
         <p>When you think you've lost your way, you may have just found your way. </p>
@@ -33,52 +33,87 @@
     </section>
     <br>
     <div class="castBookingContainer">
-        <section class="cast">
+        <section class="cast" id="infoContainer">
             <h2>Cast:</h2>
             <span class="line"></span>
-            <div>
-                <p>Director/Writer:</p>
-                <p>Hayao Miyazaki</p>
+            <div class="castTable">
+                <table>
+                    <tr>
+                        <th>Director/Writer:</th>
+                    </tr>
+                    <tr>
+                        <td>Hayao Miyazaki</td>
+                    </tr>
+                    <tr>
+                        <th>Producer:</th>
+                    </tr>
+                        <tr>
+                        <td>Toshio Suzuki</td>
+                    </tr>
+                        <tr>
+                        <th>Music:</th>
+                    </tr>
+                        <tr>
+                        <td>Joe Hisaishi</td>
+                    </tr>
+                        <tr>
+                        <td><br></td>
+                    </tr>
+                        <tr>
+                        <th>Japanese voices:</th>
+                    </tr>
+                        <tr>
+                        <td>Rumi Hiiragi as Chihiro</td>
+                    </tr>
+                        <tr>
+                        <td>Miyu Irino as Haku</td>
+                    </tr>
+                        <tr>
+                        <td>Mari Natsuki as Yubāba/Zeniiba</td>
+                    </tr>
+                </table>
 
-                <p>Producer:</p>
-                <p>Toshio Suzuki</p>
 
-                <p>Music:</p>
-                <p>Joe Hisaishi</p>
-
-                <br>
-
-                <p>Japanese voices:</p>
-
-                <p>Rumi Hiiragi as Chihiro</p>
-
-                <p>Miyu Irino as Haku</p>
-
-                <p>Mari Natsuki as Yubāba/Zeniiba</p>
-            </div>
-            <div>
-                <p>Original language: </p>
-                <p>Japanese</p>
-
-                <p>Runtime:</p>
-                <p>2h 5m</p>
-
-                <p>Release year:</p>
-                <p>20 July 2001</p>
-
-                <br>
-
-                <p>English voices:</p>
-
-                <p>Daveigh Chase as Chihiro</p>
-
-                <p>Jason Marsden as Haku</p>
-
-                <p>Suzanne Pleshette as Yubāba/Zeniiba</p>
+                <table>
+                    <tr>
+                        <th>Original language:</th>
+                    </tr>
+                    <tr>
+                        <td>Japanese</td>
+                    </tr>
+                    <tr>
+                        <th>Runtime:</th>
+                    </tr>
+                        <tr>
+                        <td>2h 5m</td>
+                    </tr>
+                        <tr>
+                        <th>Release year:</th>
+                    </tr>
+                        <tr>
+                        <td>20 July 2001</td>
+                    </tr>
+                        <tr>
+                        <td><br></td>
+                    </tr>
+                        <tr>
+                        <th>English voices:</th>
+                    </tr>
+                        <tr>
+                        <td>Daveigh Chase as Chihiro</td>
+                    </tr>
+                        <tr>
+                        <td>Jason Marsden as Haku</td>
+                    </tr>
+                        <tr>
+                        <td>Suzanne Pleshette as Yubāba/Zeniiba</td>
+                    </tr>
+                </table>
             </div>
         </section>
+    
         <br>
-        <section class="booking">
+        <section class="booking" id="infoContainer">
             <h2>Tickets:</h2>
             <span class="line"></span>
             <div class="date">
