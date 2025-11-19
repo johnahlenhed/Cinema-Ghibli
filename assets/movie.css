@@ -38,6 +38,49 @@ h2 {
     margin: 0;
 }
 
+/* - Title - */
+.movieTitle{
+    padding-left: 5px;
+}
+
+.ageRating{
+    border: 1px solid var(--font-color);
+    padding: 3px;
+    border-radius: 20%;
+}
+
+.movieGenre{
+    margin-left: 2px;
+}
+
+.movieGenre, .ageRating{
+    font-size: medium;
+}
+
+/* - TRAILER - */
+
+.trailer {
+    width: 100vw; 
+    height: 50vh;
+    margin: 3rem 0;
+}
+
+@media screen and (min-width: 800px) {
+    .trailer{
+        height: 80vh;
+    }
+}
+/* - SYNOPSIS - */
+
+.synopsis p{
+    margin: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+}
+
+
 /* - CAST - */
 
 .cast {
@@ -79,29 +122,6 @@ h2 {
     }
 
 }
-/* - TRAILER - */
-
-.trailer {
-    width: 100vw; 
-    height: 50vh;
-    margin: 3rem 0;
-}
-
-@media screen and (min-width: 800px) {
-    .trailer{
-        height: 80vh;
-    }
-}
-/* - SYNOPSIS - */
-
-.synopsis p{
-    margin: none;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    width: 100%;
-}
-
 
 /* - BOOKING - */
 
