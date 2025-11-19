@@ -5,9 +5,10 @@
 }
 
 section {
-    padding: 2rem;
     margin: 0.5rem 0 0.5rem 0;
+    padding: 2rem;
 }
+
 
 .cast, .booking, .synopsis {
     background-color: var(--container);
@@ -48,17 +49,37 @@ h2 {
 }
 
 
+@media screen and (min-width: 800px) {
+    
+    .castBookingContainer {
+        width: 100vw;
+        display: flex;
+        justify-self: center;
+        justify-content: space-between;
+        gap: 2rem
+        ;
+    }
+
+    .cast, .booking{
+        width: 40rem;
+    }
+
+    .cast{
+        width: 40rem;
+    }
+
+}
 /* - TRAILER - */
 
 .trailer {
     width: 100vw; 
-    height: 50vw;
+    height: 50vh;
 }
 
 /* - SYNOPSIS - */
 
 .synopsis{
-
+    width: 100%;
 }
 
 
