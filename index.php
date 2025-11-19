@@ -1,5 +1,7 @@
 <?php include __DIR__ . '/includes/header.php'; ?>
 
+<?php include __DIR__ . '/includes/hero.php'; ?>
+
 <main>
 
     <h1>Welcome to Cinema Ghibli</h1>
