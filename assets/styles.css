@@ -30,6 +30,10 @@
   --button-color: #ffffff;
 }
 
+*{
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--background);
   font-size: 14px;
