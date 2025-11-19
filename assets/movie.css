@@ -1,0 +1,108 @@
+/* - GENNERL - */
+
+*{
+    border: 1px red solid;
+}
+
+section {
+    padding: 2rem;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.cast, .booking, .synopsis {
+    background-color: var(--container);
+}
+
+.line {
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: var( --line);
+    margin-bottom: 1rem;
+}
+
+/* - TYPOGRPHY - */
+
+h2 {
+    margin: 0;
+}
+
+/* - CAST - */
+
+.cast {
+    display: flex;
+    flex-direction: column; 
+}
+
+.cast div {
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap;
+    height: 200px; 
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.cast > div p {
+    margin: 2px;
+}
+
+
+/* - TRAILER - */
+
+.trailer {
+    width: 100vw; 
+    height: 50vw;
+}
+
+/* - SYNOPSIS - */
+
+.synopsis{
+
+}
+
+
+/* - BOOKING - */
+
+.booking button {
+    display: inline-block;
+    border: 2px solid var(--date-tick);
+    border-radius: 10px;
+    padding: 4px 24px;
+    margin: 20px;
+    text-align: center;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+.booking p{
+    color: var(--font-color);
+}
+
+/* date button */
+
+.date button:hover {
+    border: 2px solid var(--font-color);
+}
+
+.date button {
+  background-color:var(--container);
+}
+
+.date button.active{
+  background-color: var(--date-tick);
+}
+
+/* time button */
+
+.time button:hover {
+    border: 2px solid var(--font-color);
+}
+
+.time button {
+  background-color:var(--bg-tick);
+}
+
+.time button:focus {
+  background-color:var(--date-tick);
+}
