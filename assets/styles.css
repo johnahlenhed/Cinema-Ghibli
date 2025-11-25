@@ -1,5 +1,7 @@
 :root {
   --font-family: "Libre Baskerville", serif;
+  --header-font-family: "Libre Baskerville", serif;
+  --body-font-family: "Libre Baskerville", serif;
 
   --background: #fdeed7;
   --font-color: #113e58;
@@ -14,8 +16,12 @@
   --border-color: #033856;
   --footer-font-color: #FDEED7;
   --email-cta-bg: #109CEB;
+  --carousel-p-color: #504D47;
+  --carousel-line-color: #109CEB;
 
   --button-color: #ffffff;
+
+  --cta-button-bg: #E65478;
 }
 
 .dark-mode {
@@ -32,8 +38,12 @@
   --border-color: #FDEED7;
   --footer-font-color: #FDEED7;
   --email-cta-bg: #507498;
+  --carousel-p-color: #8DABCA;
+  --carousel-line-color: #E65478;
 
   --button-color: #ffffff;
+
+  --cta-button-bg: #E65478;
 }
 
 *{
@@ -41,6 +51,7 @@
 }
 
 body {
+  font-family: var(--body-font-family);
   background-color: var(--background);
   font-size: 14px;
   color: var(--font-color);
@@ -51,6 +62,12 @@ body {
   body {
     font-size: 18px;
   }
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .navbar {
@@ -154,6 +171,10 @@ nav img {
 .mobile-menu.active {
   opacity: 1;
   pointer-events: all;
+}
+
+.header.active {
+  z-index: 0;
 }
 
 .mobile-menu > div:first-child {
@@ -284,23 +305,65 @@ main {
   width: 100%;
 }
 
+main h2 {
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
 .current-movie-container {
-  background-color: var(--container);
   width: 100%;
+  height: 30rem;
   padding: 1rem 0 0.8rem;
+  margin-bottom: 3rem;
   overflow-x: auto;
   display: flex;
+  align-items: flex-end;
   scroll-behavior: smooth;
   scrollbar-width: none; /* Firefox */
 }
 
 .current-movie-carousel {
+  background-color: var(--container);
+  border-radius: 0 0 15px 15px;
   width: 100%;
   height: 30rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.current-movie-carousel h3 {
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.current-movie-carousel:nth-child(11) h3 {
+  font-size: 1.2em;
+  width: 80%;
+}
+
+.current-movie-carousel:nth-child(11) p {
+  padding-top: 1.5rem;
+}
+
+.current-movie-carousel p {
+  color: var(--carousel-p-color);
+  margin: 0;
+  padding-top: 2rem;
+}
+
+.carousel-line {
+  width: 70%;
+  height: 1px;
+  background-color: var(--carousel-line-color);
+  margin: 0.5rem;
 }
 
 .current-movie-carousel img {
@@ -310,16 +373,20 @@ main {
 }
 
 .airing-soon-container {
-  background-color: var(--container);
   width: 100%;
+  height: 30rem;
   padding: 1rem 0 0.8rem;
+  margin-bottom: 3rem;
   overflow-x: auto;
   display: flex;
+  align-items: flex-end;
   scroll-behavior: smooth;
   scrollbar-width: none; /* Firefox */
 }
 
 .airing-soon-carousel {
+  background-color: var(--container);
+  border-radius: 0 0 15px 15px;
   width: 100%;
   height: 30rem;
   display: flex;
@@ -334,13 +401,31 @@ main {
   margin: 0;
 }
 
+.airing-soon-carousel h3 {
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.airing-soon-carousel:nth-child(3) h3 {
+  font-size: 1em;
+  margin-top: 1.6rem;
+}
+
+.airing-soon-carousel:nth-child(4) h3 {
+  font-size: 1em;
+  margin-top: 1.6rem;
+}
+
 .offer-container {
   background-color: var(--cta);
   height: auto;
   justify-content: center;
   align-items: center;
   border-radius: 15px;
-  border: 0.450rem solid var(--border-color);
+  border: 0.25rem solid var(--border-color);
 }
 
 .offer-container img {
@@ -348,11 +433,12 @@ main {
   height: auto;
   display: block;
   margin: 0;
-  border-radius: 3px 3px 0 0;
+  border-radius: 10px 10px 0 0;
 }
 
 .offer-container h2 {
   color: white;
+  font-size: 2rem;
   text-align: center;
   padding: 1rem;
 }
@@ -371,9 +457,56 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 15px;
-  border: 0.450rem solid var(--border-color);
-  margin-top: 1rem;
+  border: 0.1rem solid var(--border-color);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-container h2 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+}
+
+.cta-container p {
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+}
+
+.cta-form {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+#email {
+  font-family: "Libre Baskerville", serif;
+  height: 35px;
+  width: 250px;
+  border-radius: 5px;
+  border: none;
+  padding: 0 0.5rem;
+}
+
+.cta-button {
+  font-family: "Libre Baskerville", serif;
+  background-color: var(--cta-button-bg);
+  height: 2rem;
+  border: none;
+  color: white;
+  padding: 0 1.8rem 0 1.8rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 7px;
 }
 
 footer {

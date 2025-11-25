@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <nav class="navbar">
             <img src="/assets/images/cinema-ghibli-logo-light.svg" alt="">
             <div class="menu-icon">
