@@ -1,10 +1,8 @@
-<?php include __DIR__ . '/includes/header.php'; ?>
-
 <?php include __DIR__ . '/includes/hero.php'; ?>
 
-<main>
+<?php include __DIR__ . '/includes/header.php'; ?>
 
-    <a href="movie.php">View Movie Details</a>
+<main>
 
     <h2>Current Movies</h2>
 
@@ -15,11 +13,13 @@
 
         foreach ($current_movies as $title => $movie) { ?>
             <div class="current-movie-carousel">
+                <a href="movie.php" class="movie-link">
                 <img src="<?php echo $movie['poster']; ?>" alt="">
                 <h3><?php echo $title; ?></h3>
                 <p><?php echo $movie['jp-title']; ?></p>
                 <div class="carousel-line"></div>
                 <p><?php echo implode(", ", $movie['genre']); ?></p>
+                </a>
             </div>
 
         <?php
