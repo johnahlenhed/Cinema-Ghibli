@@ -133,7 +133,7 @@ $upcoming_movies = [
     ],
     "The red turtle" => [
         "poster" => "https://upload.wikimedia.org/wikipedia/en/f/fe/The_Red_Turtle.png",
-        "jp-title" => " ",
+        "jp-title" => "レッドタートル ある島の物語",
         "genre" => [
             "Drama",
             "Slice of life"

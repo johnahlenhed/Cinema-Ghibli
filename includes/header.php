@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <nav class="navbar">
             <div class="desktop-navbar">
                 <a href="/">Current</a>
