@@ -11,19 +11,20 @@
 
 <body>
     <header>
-        <nav class="navbar">
-            <div class="desktop-navbar">
-                <a href="/">Current</a>
-                <a href="/">Upcoming</a>
-                <a class="cinema-ghibli-logo" href="index.php"><img src="/assets/images/cinema-ghibli-logo-light.svg" alt=""> </a>
-                <div class="menu-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                    </svg>
-                </div>
-                <a href="/">Sign in</a>
-                <a class="desktop-navbar-location" href="/">location</a> 
+        <nav class="mobile-navbar">
+            <a href="index.php"><img src="/assets/images/cinema-ghibli-logo-light.svg" alt=""></a>
+            <div class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+                </svg>
             </div>
+        </nav>
+        <nav class="desktop-navbar">
+            <a href="/">Current</a>
+            <a href="/">Upcoming</a>
+            <a class="cinema-ghibli-logo" href="index.php"><img src="/assets/images/cinema-ghibli-logo-light.svg" alt=""></a>
+            <a href="/">Sign in</a>
+            <a class="desktop-navbar-location" href="/">location</a>
         </nav>
     </header>
 
