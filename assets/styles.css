@@ -18,6 +18,8 @@
   --email-cta-bg: #109CEB;
   --carousel-p-color: #504D47;
   --carousel-line-color: #109CEB;
+  --navbar-font-color: #fbf9f5;
+  --desktop-navbar-location: #31586E;
 
   --button-color: #ffffff;
 
@@ -40,6 +42,8 @@
   --email-cta-bg: #507498;
   --carousel-p-color: #8DABCA;
   --carousel-line-color: #E65478;
+  --navbar-font-color: #fbf9f5;
+  --desktop-navbar-location: #113A51;
 
   --button-color: #ffffff;
 
@@ -59,8 +63,33 @@ body {
 }
 
 @media screen and (min-width: 800px) {
-  body {
-    font-size: 18px;
+  .mobile-menu {
+    display: none;
+  }
+  .menu-icon {
+    display: none;
+  }
+  .desktop-navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    flex-direction: row;
+  }
+  .desktop-navbar a {
+    color: var(--navbar-font-color);
+    text-decoration: none;
+    display: flex;
+    align-self: center;
+  }
+  .desktop-navbar-location {
+    background-color: var(--desktop-navbar-location);
+    padding: 0.5rem 2.5rem;
+    border-radius: 40px;
+  }
+  .cinema-ghibli-logo img{
+    height: 8rem;
+    width: 12rem;
   }
 }
 
@@ -194,6 +223,12 @@ nav img {
   position: absolute;
   top: 1.4rem;
   right: 2rem;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    font-size: 18px;
+  }
 }
 
 .hero {
