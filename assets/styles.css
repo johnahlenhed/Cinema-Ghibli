@@ -281,7 +281,7 @@ main h2 {
 
 .current-movie-container {
   width: 100%;
-  height: 30rem;
+  height: 25rem;
   padding: 1rem 0 0.8rem;
   margin-bottom: 3rem;
   overflow-x: auto;
@@ -295,7 +295,14 @@ main h2 {
   background-color: var(--container);
   border-radius: 0 0 15px 15px;
   width: 100%;
-  height: 30rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.current-movie-carousel div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -307,34 +314,39 @@ main h2 {
   font-size: 1.5em;
   text-align: center;
   margin: 0;
-  margin-top: 1rem;
+  margin-top: 0.4rem;
 }
 
 .current-movie-carousel:nth-child(11) h3 {
-  font-size: 1.2em;
+  font-size: 0.95em;
   width: 80%;
 }
 
 .current-movie-carousel:nth-child(11) p {
-  padding-top: 1.5rem;
+  padding-top: 0.4rem;
 }
 
 .current-movie-carousel p {
   color: var(--carousel-p-color);
+  text-align: center;
   margin: 0;
-  padding-top: 2rem;
+  padding-top: 0.2rem;
 }
 
 .movie-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: inherit;
+  text-align: center;
 }
 
 .carousel-line {
   width: 70%;
   height: 1px;
   background-color: var(--carousel-line-color);
-  margin: 0.5rem;
 }
 
 .current-movie-carousel img {
@@ -345,7 +357,7 @@ main h2 {
 
 .airing-soon-container {
   width: 100%;
-  height: 30rem;
+  height: 25rem;
   padding: 1rem 0 0.8rem;
   margin-bottom: 3rem;
   overflow-x: auto;
@@ -359,7 +371,7 @@ main h2 {
   background-color: var(--container);
   border-radius: 0 0 15px 15px;
   width: 100%;
-  height: 30rem;
+  height: 25rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -377,7 +389,7 @@ main h2 {
   font-size: 1.5em;
   text-align: center;
   margin: 0;
-  margin-top: 1rem;
+  margin-top: 0.4rem;
 }
 
 .airing-soon-carousel:nth-child(3) h3 {
@@ -388,6 +400,13 @@ main h2 {
 .airing-soon-carousel:nth-child(4) h3 {
   font-size: 1em;
   margin-top: 1.6rem;
+}
+
+.airing-soon-carousel p {
+  color: var(--carousel-p-color);
+  text-align: center;
+  margin: 0;
+  padding-top: 0.2rem;
 }
 
 .offer-container {
