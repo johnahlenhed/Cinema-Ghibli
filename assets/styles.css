@@ -113,6 +113,19 @@ nav img {
   height: 1.8rem;
 }
 
+.header-offer {
+  background-color: var(--cta);
+  text-align: center;
+  padding: 0.2rem 3.5rem 0.2rem 3.5rem;
+}
+
+.header-offer h5 {
+  margin: 0.5rem;
+  font-size: 1rem;
+  color: white;
+  font-weight: normal;
+}
+
 .menu-icon {
   color: var(--icon-color);
   height: 1.5rem;
@@ -248,23 +261,29 @@ nav img {
   height: 45vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: left;
   z-index: 5;
 }
 
 .hero-content-container img {
-  width: 10rem;
+  width: 18rem;
   height: auto;
-  margin-bottom: 3rem;
-  margin-left: 2.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: 2.2rem;
+  margin-top: 2rem;
 }
 
 .hero-text-content {
-  margin-top: 0.5rem;
+  text-align: left;
+  font-size: 1.15rem;
+  width: 80%;
+  margin-top: 0.8rem;
   margin-left: 2.5rem;
   padding-right: 2.5rem;
-  text-align: left;
+}
+
+.hero-text-content p {
+  margin: 0;
+  line-height: 1.5;
 }
 
 .hero-slideshow {
@@ -285,7 +304,7 @@ nav img {
   bottom: 0;
   width: 100%;
   height: 90vh;
-  animation: heroAnimation1 12s infinite;
+  animation: heroAnimation1 30s infinite;
 }
 
 
@@ -299,7 +318,74 @@ nav img {
   bottom: 0;
   width: 100%;
   height: 90vh;
-  animation: heroAnimation2 12s infinite;
+  animation: heroAnimation2 30s infinite;
+}
+
+.hero-slide3 {
+  background-image: url('../assets/images/studio-ghibli-hero-3.png');
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: absolute;
+  overflow-y: auto;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 90vh;
+  animation: heroAnimation3 30s infinite;
+}
+
+.hero-slide4 {
+  background-image: url('../assets/images/studio-ghibli-hero-4.png');
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: absolute;
+  overflow-y: auto;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 90vh;
+  animation: heroAnimation4 30s infinite;
+}
+
+/* Hero slide animations */
+
+@keyframes heroAnimation1 {
+  0% {opacity: 1;}
+  25% {opacity: 1;}
+  30% {opacity: 0;}
+  50% {opacity: 0;}
+  75% {opacity: 0;}
+  90% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes heroAnimation2 {
+  0% {opacity: 0;}
+  20% {opacity: 0;}
+  25% {opacity: 1;}
+  45% {opacity: 1;}
+  50% {opacity: 0;}
+  75% {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+@keyframes heroAnimation3 {
+  0% {opacity: 0;}
+  25% {opacity: 0;}
+  45% {opacity: 0;}
+  50% {opacity: 1;}
+  75% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@keyframes heroAnimation4 {
+  0% {opacity: 0;}
+  25% {opacity: 0;}
+  50% {opacity: 0;}
+  70% {opacity: 0;}
+  75% {opacity: 1;}
+  90% {opacity: 1;}
+  100% {opacity: 0;}
 }
 
 main {
@@ -316,7 +402,7 @@ main h2 {
 
 .current-movie-container {
   width: 100%;
-  height: 30rem;
+  height: 25rem;
   padding: 1rem 0 0.8rem;
   margin-bottom: 3rem;
   overflow-x: auto;
@@ -330,7 +416,14 @@ main h2 {
   background-color: var(--container);
   border-radius: 0 0 15px 15px;
   width: 100%;
-  height: 30rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.current-movie-carousel div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -342,34 +435,39 @@ main h2 {
   font-size: 1.5em;
   text-align: center;
   margin: 0;
-  margin-top: 1rem;
+  margin-top: 0.4rem;
 }
 
 .current-movie-carousel:nth-child(11) h3 {
-  font-size: 1.2em;
+  font-size: 0.95em;
   width: 80%;
 }
 
 .current-movie-carousel:nth-child(11) p {
-  padding-top: 1.5rem;
+  padding-top: 0.4rem;
 }
 
 .current-movie-carousel p {
   color: var(--carousel-p-color);
+  text-align: center;
   margin: 0;
-  padding-top: 2rem;
+  padding-top: 0.2rem;
 }
 
 .movie-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: inherit;
+  text-align: center;
 }
 
 .carousel-line {
   width: 70%;
   height: 1px;
   background-color: var(--carousel-line-color);
-  margin: 0.5rem;
 }
 
 .current-movie-carousel img {
@@ -380,7 +478,7 @@ main h2 {
 
 .airing-soon-container {
   width: 100%;
-  height: 30rem;
+  height: 25rem;
   padding: 1rem 0 0.8rem;
   margin-bottom: 3rem;
   overflow-x: auto;
@@ -394,7 +492,7 @@ main h2 {
   background-color: var(--container);
   border-radius: 0 0 15px 15px;
   width: 100%;
-  height: 30rem;
+  height: 25rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -412,7 +510,7 @@ main h2 {
   font-size: 1.5em;
   text-align: center;
   margin: 0;
-  margin-top: 1rem;
+  margin-top: 0.4rem;
 }
 
 .airing-soon-carousel:nth-child(3) h3 {
@@ -423,6 +521,13 @@ main h2 {
 .airing-soon-carousel:nth-child(4) h3 {
   font-size: 1em;
   margin-top: 1.6rem;
+}
+
+.airing-soon-carousel p {
+  color: var(--carousel-p-color);
+  text-align: center;
+  margin: 0;
+  padding-top: 0.2rem;
 }
 
 .offer-container {
@@ -555,41 +660,6 @@ footer p {
 }
 
 
-@keyframes heroAnimation1 {
-  0% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-  45% {
-    opacity: 1;
-  }
-  55% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes heroAnimation2 {
-  0% {
-    opacity: 1;
-  }
-  10% {
-    opacity: 0;
-  }
-  45% {
-    opacity: 0;
-  }
-  55% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
 @media screen and (min-width: 768px) {
 }
