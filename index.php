@@ -1,12 +1,8 @@
-<?php include __DIR__ . '/includes/header.php'; ?>
-
 <?php include __DIR__ . '/includes/hero.php'; ?>
 
+<?php include __DIR__ . '/includes/header.php'; ?>
+
 <main>
-
-    <h1>Welcome to Cinema Ghibli</h1>
-
-    <a href="movie.php">View Movie Details</a>
 
     <h2>Current Movies</h2>
 
@@ -17,10 +13,13 @@
 
         foreach ($current_movies as $title => $movie) { ?>
             <div class="current-movie-carousel">
+                <a href="movie.php" class="movie-link">
                 <img src="<?php echo $movie['poster']; ?>" alt="">
                 <h3><?php echo $title; ?></h3>
-                <p>Japanese Title: <?php echo $movie['jp-title']; ?></p>
-                <p>Genre: <?php echo implode(", ", $movie['genre']); ?></p>
+                <p><?php echo $movie['jp-title']; ?></p>
+                <div class="carousel-line"></div>
+                <p><?php echo implode(", ", $movie['genre']); ?></p>
+                </a>
             </div>
 
         <?php
@@ -41,8 +40,9 @@
             <div class="airing-soon-carousel">
                 <img src="<?php echo $movie['poster']; ?>" alt="">
                 <h3><?php echo $title; ?></h3>
-                <p>Japanese Title: <?php echo $movie['jp-title']; ?></p>
-                <p>Genre: <?php echo implode(", ", $movie['genre']); ?></p>
+                <p><?php echo $movie['jp-title']; ?></p>
+                <div class="carousel-line"></div>
+                <p><?php echo implode(", ", $movie['genre']); ?></p>
             </div>
 
         <?php
@@ -55,7 +55,7 @@
 
         <h2>Right now!</h2>
 
-        <p> If you buy a ticket now, you can get a chance to win an exclusive customized popcorn bucket 
+        <p> If you buy a ticket now, you can get a chance to win an exclusive customized popcorn bucket
             themed after you favorite movies and characters!</p>
 
         <p>*only available this week</p>
@@ -68,9 +68,11 @@
 
         <p>Sign up today and get 10% off on your next purchase!</p>
 
-        <input type="email" name="email" id="email" placeholder="Enter your email">
-        <button type="submit">JOIN</button>
-    </div>"
+        <div class="cta-form">
+            <input type="email" name="email" id="email" placeholder="youremail@example.com">
+            <button type="submit" class="cta-button">JOIN!</button>
+        </div>
+    </div>
 
     <script src="/assets/carousel.js"></script>
 
