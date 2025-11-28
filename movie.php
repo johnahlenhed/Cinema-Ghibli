@@ -6,14 +6,14 @@
 <main>
     <section class="movieTitle">
         <h1>Spirited Away</h1>
-        <span class="ageRating">7+</span>
-        <span class="movieGenre">Adventure,</span>
-        <span class="movieGenre">Family</span>
-
+        <div>
+            <span class="ageRating">7+</span>
+            <span class="movieGenre">Adventure,</span>
+            <span class="movieGenre">Family</span>
+        </div>
     </section>
-
-    <div class="trailer" id="infoContainer">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ByXuk9QqQkk?si=qdcTF4G70ObH7q03" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="trailer">
+        <iframe class="responsive-iframe" src="https://www.youtube.com/embed/ByXuk9QqQkk?si=qdcTF4G70ObH7q03" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
     <section class="synopsis" id="infoContainer">
         <h2>Synopsis:</h2>
@@ -31,7 +31,6 @@
         <p> To survive and find her way back home, Chihiro must find the courage to stand up for
             herself, and preserve the memory of who she once was.</p>
     </section>
-    <br>
     <div class="castBookingContainer">
         <section class="cast" id="infoContainer">
             <h2>Cast:</h2>
@@ -111,8 +110,6 @@
                 </table>
             </div>
         </section>
-    
-        <br>
         <section class="booking" id="infoContainer">
             <h2>Tickets:</h2>
             <span class="line"></span>
