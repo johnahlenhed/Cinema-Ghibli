@@ -95,7 +95,6 @@ main h3{
 
 @media screen and (min-width: 800px) {
     .trailer{
-        height: 100vh;
         width: 100%; 
         margin-bottom: 2rem;
     }
@@ -134,21 +133,18 @@ main h3{
 }
 
 table th, table td {
-    padding: 0.4rem 0;
+    padding: 0.6rem 0;
 }
 
 table th{
     text-wrap: nowrap;
-}
-
-table td {
-    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
 }
 
 @media screen and (min-width: 800px) {
     .castTable table {
     width: 200px;
-}
+    }
 }
 /* - SYNOPSIS - */
 
