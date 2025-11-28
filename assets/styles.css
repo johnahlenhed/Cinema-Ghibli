@@ -14,16 +14,16 @@
   --cta: #e65478;
   --hero-bg: #3e727a89;
   --border-color: #033856;
-  --footer-font-color: #FDEED7;
-  --email-cta-bg: #109CEB;
-  --carousel-p-color: #504D47;
-  --carousel-line-color: #109CEB;
+  --footer-font-color: #fdeed7;
+  --email-cta-bg: #109ceb;
+  --carousel-p-color: #504d47;
+  --carousel-line-color: #109ceb;
   --navbar-font-color: #fbf9f5;
-  --desktop-navbar-location: #31586E;
+  --desktop-navbar-location: #31586e;
 
   --button-color: #ffffff;
 
-  --cta-button-bg: #E65478;
+  --cta-button-bg: #e65478;
 }
 
 .dark-mode {
@@ -37,20 +37,20 @@
   --bg-tick: #131f44;
   --cta: #e65478;
   --hero-bg: #3e727a89;
-  --border-color: #FDEED7;
-  --footer-font-color: #FDEED7;
+  --border-color: #fdeed7;
+  --footer-font-color: #fdeed7;
   --email-cta-bg: #507498;
-  --carousel-p-color: #8DABCA;
-  --carousel-line-color: #E65478;
+  --carousel-p-color: #8dabca;
+  --carousel-line-color: #e65478;
   --navbar-font-color: #fbf9f5;
-  --desktop-navbar-location: #113A51;
+  --desktop-navbar-location: #113a51;
 
   --button-color: #ffffff;
 
-  --cta-button-bg: #E65478;
+  --cta-button-bg: #e65478;
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -63,6 +63,10 @@ body {
 }
 
 .desktop-navbar {
+  display: none;
+}
+
+.hero-desktop-content-container {
   display: none;
 }
 
@@ -89,8 +93,9 @@ header {
 
 .header-offer {
   background-color: var(--cta);
+  height: auto;
   text-align: center;
-  padding: 0.2rem 3.5rem 0.2rem 3.5rem;
+  padding: 0.2rem 1rem 0.2rem 1rem;
 }
 
 .header-offer h5 {
@@ -187,6 +192,7 @@ header {
 .mobile-menu.active {
   opacity: 1;
   pointer-events: all;
+  z-index: 1000;
 }
 
 .header.active {
@@ -226,7 +232,7 @@ header {
 .hero-overlay {
   position: relative;
   width: 100%;
-  height: 90vh;
+  height: 89.5vh;
 }
 
 .hero-content-container {
@@ -239,7 +245,7 @@ header {
 }
 
 .hero-content-container img {
-  width: 18rem;
+  width: 14rem;
   height: auto;
   margin-bottom: 1.5rem;
   margin-left: 2.2rem;
@@ -269,7 +275,7 @@ header {
 }
 
 .hero-slide1 {
-  background-image: url('../assets/images/studio-ghibli-hero-1.png');
+  background-image: url("../assets/images/studio-ghibli-hero-1.png");
   background-size: cover;
   background-position: bottom;
   background-attachment: absolute;
@@ -281,9 +287,8 @@ header {
   animation: heroAnimation1 30s infinite;
 }
 
-
 .hero-slide2 {
-  background-image: url('../assets/images/studio-ghibli-hero-2.png');
+  background-image: url("../assets/images/studio-ghibli-hero-2.png");
   background-size: cover;
   background-position: bottom;
   background-attachment: absolute;
@@ -296,7 +301,7 @@ header {
 }
 
 .hero-slide3 {
-  background-image: url('../assets/images/studio-ghibli-hero-3.png');
+  background-image: url("../assets/images/studio-ghibli-hero-3.png");
   background-size: cover;
   background-position: bottom;
   background-attachment: absolute;
@@ -309,7 +314,7 @@ header {
 }
 
 .hero-slide4 {
-  background-image: url('../assets/images/studio-ghibli-hero-4.png');
+  background-image: url("../assets/images/studio-ghibli-hero-4.png");
   background-size: cover;
   background-position: bottom;
   background-attachment: absolute;
@@ -324,42 +329,96 @@ header {
 /* Hero slide animations */
 
 @keyframes heroAnimation1 {
-  0% {opacity: 1;}
-  25% {opacity: 1;}
-  30% {opacity: 0;}
-  50% {opacity: 0;}
-  75% {opacity: 0;}
-  90% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes heroAnimation2 {
-  0% {opacity: 0;}
-  20% {opacity: 0;}
-  25% {opacity: 1;}
-  45% {opacity: 1;}
-  50% {opacity: 0;}
-  75% {opacity: 0;}
-  100% {opacity: 0;}
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes heroAnimation3 {
-  0% {opacity: 0;}
-  25% {opacity: 0;}
-  45% {opacity: 0;}
-  50% {opacity: 1;}
-  75% {opacity: 1;}
-  100% {opacity: 0;}
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes heroAnimation4 {
-  0% {opacity: 0;}
-  25% {opacity: 0;}
-  50% {opacity: 0;}
-  70% {opacity: 0;}
-  75% {opacity: 1;}
-  90% {opacity: 1;}
-  100% {opacity: 0;}
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 main {
@@ -613,12 +672,10 @@ footer ul {
   justify-content: flex-start;
   padding: 0;
   margin-top: 1rem;
-
 }
 
 footer ul li {
   margin: 0 1rem;
-
 }
 
 footer ul li a {
@@ -628,117 +685,258 @@ footer ul li a {
 }
 
 @media screen and (min-width: 768px) {
+  .hero {
+    display: none;
+  }
 
-.hero {
-  width: 100%;
-  height: auto;
-}
+  .hero-desktop {
+    width: 100%;
+    height: 89.5vh;
+    height: auto;
+  }
 
-.hero-overlay {
-  position: relative;
-  width: 100%;
-  height: 50vh;
-}
+  .hero-desktop-overlay {
+    position: relative;
+    width: 100%;
+    height: 89.5vh;
+  }
 
-.hero-content-container {
-  background-color: var(--hero-bg);
-  width: 47%;
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  z-index: 5;
-}
+  .hero-desktop-content-container {
+    background-color: var(--hero-bg);
+    width: 47%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+  }
 
-.hero-logo {
-  width: 70%;
-  height: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
+  .hero-desktop-content-container img {
+    height: auto;
+    width: 10rem;
+  }
 
-.hero-logo img {
-  width: 100%;
-  height: auto;
-}
+  .hero-desktop-text-content {
+    font-size: 1.25rem;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 
-.hero-text-content {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  text-align: left;
-}
+  .hero-desktop-logo {
+    width: 70%;
+    height: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 
-.hero-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
+  .hero-desktop-logo img {
+    width: 100%;
+    height: auto;
+  }
 
-.hero-button-upcoming {
-  font-family: "Libre Baskerville", serif;
-  background-color: transparent;
-  color: var(--font-color);
-  border: 2px solid var(--font-color);
-  text-align: center;
-  height: 45px;
-  width: 130px;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 5px;
-}
+  .hero-desktop-text-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: left;
+  }
 
-.hero-button-movies {
-  font-family: "Libre Baskerville", serif;
-  background-color: transparent;
-  color: var(--font-color);
-  border: 2px solid var(--font-color);
-  text-align: center;
-  height: 45px;
-  width: 130px;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 5px;
-}
+  .hero-desktop-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 
-.hero-slideshow {
-  position: absolute;
-  display: flex;
-  width: 100vw;
-  height: 50vh;
-  overflow: hidden;
-}
+  .hero-desktop-button-upcoming {
+    font-family: "Libre Baskerville", serif;
+    background-color: transparent;
+    color: var(--font-color);
+    border: 2px solid var(--font-color);
+    text-align: center;
+    height: 45px;
+    width: 130px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
 
-.hero-slide1 {
-  background-image: url('../assets/images/hero-1.jpg');
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  width: 100%;
-  height: 50vh;
-  animation: heroAnimation1 15s infinite;
-}
+  .hero-desktop-button-movies {
+    font-family: "Libre Baskerville", serif;
+    background-color: transparent;
+    color: var(--font-color);
+    border: 2px solid var(--font-color);
+    text-align: center;
+    height: 45px;
+    width: 130px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
 
+  .hero-desktop-slideshow {
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 92vh;
+    overflow: hidden;
+  }
 
-.hero-slide2 {
-  background-image: url('../assets/images/hero-2.jpg');
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  width: 100%;
-  height: 50vh;
-  animation: heroAnimation2 15s infinite;
-}
-}
+  .hero-desktop-slide1 {
+    background-image: url("../assets/images/studio-ghibli-hero-1.png"); /* Update images for desktop */
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: absolute;
+    overflow-y: auto;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 92vh;
+    animation: heroDesktopAnimation1 30s infinite;
+  }
 
-@media screen and (min-width: 768px) {
+  .hero-desktop-slide2 {
+    background-image: url("../assets/images/studio-ghibli-hero-2.png"); /* Update images for desktop */
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: absolute;
+    overflow-y: auto;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 92vh;
+    animation: heroDesktopAnimation2 30s infinite;
+  }
+
+  .hero-desktop-slide3 {
+    background-image: url("../assets/images/studio-ghibli-hero-3.png"); /* Update images for desktop */
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: absolute;
+    overflow-y: auto;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 92vh;
+    animation: heroDesktopAnimation3 30s infinite;
+  }
+
+  .hero-desktop-slide4 {
+    background-image: url("../assets/images/studio-ghibli-hero-4.png"); /* Update images for desktop */
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: absolute;
+    overflow-y: auto;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 92vh;
+    animation: heroDesktopAnimation4 30s infinite;
+  }
+
+  /* Hero slide animations */
+
+  @keyframes heroDesktopAnimation1 {
+    0% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 1;
+    }
+    30% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 0;
+    }
+    90% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes heroDesktopAnimation2 {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    45% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes heroDesktopAnimation3 {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    45% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes heroDesktopAnimation4 {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    70% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
   .mobile-navbar {
     display: none;
   }
+
   .desktop-navbar {
     width: 100%;
     display: flex;
@@ -749,18 +947,21 @@ footer ul li a {
     height: 4rem;
     padding: 0 2rem;
   }
+
   .desktop-navbar a {
     color: var(--navbar-font-color);
     text-decoration: none;
     display: flex;
     align-self: center;
   }
+
   .desktop-navbar-location {
     background-color: var(--desktop-navbar-location);
     padding: 0.5rem 2.5rem;
     border-radius: 40px;
   }
-  .cinema-ghibli-logo img{
+
+  .cinema-ghibli-logo img {
     height: 8rem;
     width: 12rem;
   }
