@@ -5,7 +5,7 @@
 </head>
 <main>
     <section class="movieTitle">
-        <h1>Spirited Away</h1>
+        <h2>Spirited Away</h2>
         <div>
             <span class="ageRating">7+</span>
             <span class="movieGenre">Adventure,</span>
@@ -16,7 +16,7 @@
         <iframe class="responsive-iframe" src="https://www.youtube.com/embed/ByXuk9QqQkk?si=qdcTF4G70ObH7q03" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
     <section class="synopsis" id="infoContainer">
-        <h2>Synopsis:</h2>
+        <h3>Synopsis:</h3>
         <span class="line"></span>
         <p>When you think you've lost your way, you may have just found your way. </p>
         <p>10-year-old Chihiro is on her way to a new home with her parents when they
@@ -33,7 +33,7 @@
     </section>
     <div class="castBookingContainer">
         <section class="cast" id="infoContainer">
-            <h2>Cast:</h2>
+            <h3>Cast:</h3>
             <span class="line"></span>
             <div class="castTable">
                 <table>
@@ -111,7 +111,7 @@
             </div>
         </section>
         <section class="booking" id="infoContainer">
-            <h2>Tickets:</h2>
+            <h3>Tickets:</h3>
             <span class="line"></span>
             <div class="date">
                 <button>

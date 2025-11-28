@@ -4,7 +4,7 @@
 
 <main>
 
-    <h2>Current Movies</h2>
+    <h2 class="indexTitle">Current Movies</h2>
 
     <section class="current-movie-container">
 
@@ -29,7 +29,7 @@
         </div>
     </section>
 
-    <h2>Airing Soon</h2>
+    <h2 class="indexTitle">Airing Soon</h2>
 
     <section class="airing-soon-container">
 
@@ -53,7 +53,7 @@
     <div class="offer-container">
         <img src="/assets/images/popcorn.png" alt="Popcorn">
 
-        <h2>Right now!</h2>
+        <h2 class="indexTitle">Right now!</h2>
 
         <p> If you buy a ticket now, you can get a chance to win an exclusive customized popcorn bucket
             themed after you favorite movies and characters!</p>
@@ -62,7 +62,7 @@
     </div>
 
     <div class="cta-container">
-        <h2>HELLO MOVIE FAN!</h2>
+        <h2 class="indexTitle">HELLO MOVIE FAN!</h2>
 
         <p>Did you know; as a member of our news letter, you can not only updates about you favorite movies and latest news, BUT ALSO get exclusive deals?</p>
 
