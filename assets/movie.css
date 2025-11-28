@@ -17,7 +17,7 @@ section {
 
 .line {
     display: block;
-    width: 100px;
+    width: 120px;
     height: 2px;
     background-color: var( --line);
     margin-bottom: 2rem;
@@ -25,19 +25,32 @@ section {
 
 /* - TYPOGRPHY - */
 
-h2 {
+main h2 {
     margin: 0;
+    text-align: left;
+}
+
+main h3{
+    font-size: 3em;
+    font-weight: bold;
+}
+main h3{
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* - Title - */
 
 .movieTitle{
     text-align: left;
-    margin: 1rem 0;
+    margin-bottom: 0.5rem;
 }
 
-.movieTitle h1 {
+.movieTitle h2 {
     margin: 0.5rem 0;
+    font-size: 3em;
 }
 
 .movieTitle div{
@@ -55,6 +68,9 @@ h2 {
     .movieTitle {
     float: left;
     }
+    .line {
+    width: 160px;
+}
 }
 
 /* - TRAILER - */
@@ -129,7 +145,11 @@ table td {
     padding-bottom: 1.5rem;
 }
 
-
+@media screen and (min-width: 800px) {
+    .castTable table {
+    width: 200px;
+}
+}
 /* - SYNOPSIS - */
 
 .synopsis p{
