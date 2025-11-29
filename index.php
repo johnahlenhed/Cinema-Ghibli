@@ -4,7 +4,7 @@
 
 <main>
 
-    <h2 class="indexTitle">Current Movies</h2>
+    <h2 class="indexTitleCurrent">Current Movies</h2>
 
     <section class="current-movie-container">
 
@@ -29,8 +29,8 @@
         </div>
     </section>
 
-    <h2 class="indexTitle">Airing Soon</h2>
-
+    
+    <h2 class="indexTitleAiring">Airing Soon</h2>
     <section class="airing-soon-container">
 
         <?php

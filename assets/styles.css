@@ -15,7 +15,7 @@
   --hero-bg: #3e727a89;
   --border-color: #033856;
   --footer-font-color: #fdeed7;
-  --email-cta-bg: #109ceb;
+  --email-cta-bg: #A0C3E6;
   --carousel-p-color: #504d47;
   --carousel-line-color: #109ceb;
   --navbar-font-color: #fbf9f5;
@@ -429,10 +429,13 @@ main h2 {
   font-weight: bold;
   font-size: 3em;
 }
-main .indexTitle {
+.indexTitle, .indexTitleAiring, .indexTitleCurrent {
   text-align: center;
-  margin-top: 4.5rem;
   margin-bottom: 1rem;
+}
+
+.indexTitleAiring, .indexTitleCurrent{
+  margin-top: 4.5rem;
 }
 
 .current-movie-container {
@@ -685,19 +688,15 @@ footer ul li a {
   text-decoration: none;
   font-size: 1rem;
 }
-@media screen and (min-width: 768px){
-  footer ul, footer li{
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  footer ul li a {
-    font-size: 1.5rem;
-    margin: 1rem 0;
-  }
-}
 
 @media screen and (min-width: 768px) {
+
+  main{
+    padding: 0 6rem;
+    display: flex;
+    flex-direction: column;
+  }
+
   .hero {
     display: none;
   }
@@ -946,6 +945,8 @@ footer ul li a {
     }
   }
 
+  /* Navbar */
+
   .mobile-navbar {
     display: none;
   }
@@ -977,5 +978,33 @@ footer ul li a {
   .cinema-ghibli-logo img {
     height: 8rem;
     width: 12rem;
+  }
+
+  .airing-soon-container, .indexTitleAiring{
+    order: 2;
+    display: flex;
+  }
+  .indexTitleAiring{
+    justify-content: center;
+  }
+
+  .offer-container{
+    order: 1;
+  }
+
+  .cta-container{
+    order: 3;
+  }
+
+  /* Footer */
+
+  footer ul, footer li{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  footer ul li a {
+    font-size: 1.5rem;
+    margin: 1rem 0;
   }
 }
