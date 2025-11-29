@@ -6,6 +6,7 @@
 
     <h2 class="indexTitleCurrent">Current Movies</h2>
 
+     <!-- mobile current airing -->
     <section class="current-movie-container">
 
         <?php
@@ -29,8 +30,33 @@
         </div>
     </section>
 
+    <!-- desktop current airing -->
+    <section class="current-movie-desktop-container">
+
+        <?php
+        include __DIR__ . '/assets/data.php';
+
+        foreach ($current_movies as $title => $movie) { ?>
+            <div class="current-movie-desktop-card">
+                <a href="movie.php" class="movie-link">
+                <img src="<?php echo $movie['poster']; ?>" alt="">
+                <h3><?php echo $title; ?></h3>
+                <p><?php echo $movie['jp-title']; ?></p>
+                <p><?php echo implode(", ", $movie['genre']); ?></p>
+                </a>
+            </div>
+
+        <?php
+        }
+        ?>
+
+        </div>
+    </section>
     
+
     <h2 class="indexTitleAiring">Airing Soon</h2>
+
+     <!-- mobile airing soon -->
     <section class="airing-soon-container">
 
         <?php
@@ -42,6 +68,24 @@
                 <h3><?php echo $title; ?></h3>
                 <p><?php echo $movie['jp-title']; ?></p>
                 <div class="carousel-line"></div>
+                <p><?php echo implode(", ", $movie['genre']); ?></p>
+            </div>
+
+        <?php
+        }
+        ?>
+    </section>
+
+    <!-- desktop airing soon -->
+    <section class="airing-soon-desktop-container">
+            <?php
+        include __DIR__ . '/assets/data.php';
+
+        foreach ($upcoming_movies as $title => $movie) { ?>
+            <div class="airing-soon-desktop-card">
+                <img src="<?php echo $movie['poster']; ?>" alt="">
+                <h3><?php echo $title; ?></h3>
+                <p><?php echo $movie['jp-title']; ?></p>
                 <p><?php echo implode(", ", $movie['genre']); ?></p>
             </div>
 

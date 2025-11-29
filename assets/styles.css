@@ -438,6 +438,10 @@ main h2 {
   margin-top: 4.5rem;
 }
 
+.airing-soon-desktop-container, .current-movie-desktop-container{
+  display: none;
+}
+
 .current-movie-container {
   width: 100%;
   height: 25rem;
@@ -452,7 +456,6 @@ main h2 {
 
 .current-movie-carousel {
   background-color: var(--container);
-  border-radius: 0 0 15px 15px;
   width: 100%;
   height: 25rem;
   display: flex;
@@ -980,14 +983,7 @@ footer ul li a {
     width: 12rem;
   }
 
-  .airing-soon-container, .indexTitleAiring{
-    order: 2;
-    display: flex;
-  }
-  .indexTitleAiring{
-    justify-content: center;
-  }
-
+  /* offer and cta */
   .offer-container{
     order: 1;
   }
@@ -1006,5 +1002,64 @@ footer ul li a {
   footer ul li a {
     font-size: 1.5rem;
     margin: 1rem 0;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+    /* Airing soon */
+  .airing-soon-carousel, .airing-soon-container{
+    display: none;
+  }
+  .airing-soon-desktop-container, .current-movie-desktop-container{
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+  .airing-soon-desktop-container, .indexTitleAiring{
+    order: 2;
+    display: flex;
+  }
+
+  .indexTitleAiring{
+    justify-content: center;
+  }
+
+  .airing-soon-desktop-card, .current-movie-desktop-card{
+    display: flex;
+    flex-direction: column;
+    height: 26rem;
+    width: 14rem;
+    background-color: var(--container);
+    border-radius: 15px;
+  }
+
+  .airing-soon-desktop-container, .current-movie-desktop-container {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 80px;
+  }
+
+  .airing-soon-desktop-card img, .current-movie-desktop-container img {
+    width: 14rem;
+    height: 300px;
+    margin: 0;
+  }
+
+  .airing-soon-desktop-container h3, .current-movie-desktop-container h3 {
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0;
+    margin-top: 0.4rem;
+  }
+
+  .airing-soon-desktop-container p, .current-movie-desktop-container p {
+    color: var(--carousel-p-color);
+    text-align: center;
+    margin: 0;
+    padding-top: 0.2rem;
   }
 }
