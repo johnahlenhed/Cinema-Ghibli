@@ -42,6 +42,7 @@
                 <img src="<?php echo $movie['poster']; ?>" alt="">
                 <h3><?php echo $title; ?></h3>
                 <p><?php echo $movie['jp-title']; ?></p>
+                <div class="desktop-line"></div>
                 <p><?php echo implode(", ", $movie['genre']); ?></p>
                 </a>
             </div>
@@ -86,6 +87,7 @@
                 <img src="<?php echo $movie['poster']; ?>" alt="">
                 <h3><?php echo $title; ?></h3>
                 <p><?php echo $movie['jp-title']; ?></p>
+                <div class="desktop-line"></div>
                 <p><?php echo implode(", ", $movie['genre']); ?></p>
             </div>
 

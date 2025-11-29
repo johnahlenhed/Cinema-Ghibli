@@ -439,7 +439,7 @@ main h2 {
 }
 
 .airing-soon-desktop-container, .current-movie-desktop-container{
-  display: none;
+  display:none;
 }
 
 .current-movie-container {
@@ -505,7 +505,7 @@ main h2 {
   text-align: center;
 }
 
-.carousel-line {
+.carousel-line, .desktop-line {
   width: 70%;
   height: 1px;
   background-color: var(--carousel-line-color);
@@ -592,7 +592,7 @@ main h2 {
   color: white;
   font-size: 2rem;
   text-align: center;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 
 .offer-container p {
@@ -694,10 +694,15 @@ footer ul li a {
 
 @media screen and (min-width: 768px) {
 
+
+  .indexTitleAiring, .indexTitleCurrent{
+    margin-top: 9rem;
+    margin-bottom: 2rem;
+  }
   main{
     padding: 0 6rem;
-    display: flex;
     flex-direction: column;
+    justify-items: center;
   }
 
   .hero {
@@ -1003,48 +1008,42 @@ footer ul li a {
     font-size: 1.5rem;
     margin: 1rem 0;
   }
-}
 
-
-@media screen and (min-width: 768px) {
     /* Airing soon */
-  .airing-soon-carousel, .airing-soon-container{
+  .current-movie-container, .airing-soon-container{
     display: none;
   }
   .airing-soon-desktop-container, .current-movie-desktop-container{
-    display: inline-flex;
+    height: auto;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    max-width: 935px;
   }
   .airing-soon-desktop-container, .indexTitleAiring{
     order: 2;
-    display: flex;
   }
 
   .indexTitleAiring{
     justify-content: center;
+    display: flex;
   }
 
   .airing-soon-desktop-card, .current-movie-desktop-card{
     display: flex;
     flex-direction: column;
+    align-items: center;
     height: 26rem;
     width: 14rem;
     background-color: var(--container);
     border-radius: 15px;
   }
 
-  .airing-soon-desktop-container, .current-movie-desktop-container {
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 80px;
-  }
-
   .airing-soon-desktop-card img, .current-movie-desktop-container img {
     width: 14rem;
-    height: 300px;
+    height: 19rem;
     margin: 0;
   }
 
