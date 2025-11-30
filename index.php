@@ -2,7 +2,7 @@
 
 <?php include __DIR__ . '/includes/header.php'; ?>
 
-<main>
+<main id="indexMain">
 
     <h2 class="indexTitleCurrent">Current Movies</h2>
 

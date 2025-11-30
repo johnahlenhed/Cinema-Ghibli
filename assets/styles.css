@@ -222,7 +222,7 @@ header {
   body {
     font-size: 18px;
   }
-  main{
+ #indexMain{
     display: flex;
     flex-direction: column;
     align-items: center;
