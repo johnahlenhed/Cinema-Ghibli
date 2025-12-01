@@ -644,17 +644,18 @@ main h2 {
 
 #email {
   font-family: "Libre Baskerville", serif;
-  height: 35px;
   width: 250px;
+  height: 35px;
   border-radius: 5px;
   border: none;
   padding: 0 0.5rem;
+  text-align: center;
 }
 
 .cta-button {
   font-family: "Libre Baskerville", serif;
   background-color: var(--cta-button-bg);
-  height: 2rem;
+  height: 35px;
   border: none;
   color: white;
   padding: 0 1.8rem 0 1.8rem;
@@ -699,10 +700,11 @@ footer ul li a {
 
 @media screen and (min-width: 768px) {
 
-
+  /* titles */
   .indexTitleAiring, .indexTitleCurrent{
     margin-top: 6rem;
   }
+  /* general */
   main{
     padding: 0 6rem;
     flex-direction: column;
@@ -710,6 +712,7 @@ footer ul li a {
     display: flex;
   }
 
+  /* hero desktop */
   .hero {
     display: none;
   }
