@@ -12,7 +12,7 @@
   --date-tick: #a9ddfb;
   --bg-tick: #c7e2db;
   --cta: #e65478;
-  --hero-bg: #3e727a89;
+  --hero-bg: #3e727a;
   --border-color: #033856;
   --footer-font-color: #fdeed7;
   --email-cta-bg: #A0C3E6;
@@ -30,13 +30,13 @@
   --background: #061524;
   --font-color: #fffdf9;
   --icon-color: white;
-  --nav: #084d75;
+  --nav: #13273B;
   --container: #13273b;
   --line: #e65478;
   --date-tick: #6f7fb3;
   --bg-tick: #131f44;
   --cta: #e65478;
-  --hero-bg: #3e727a89;
+  --hero-bg: #3e727a;
   --border-color: #fdeed7;
   --footer-font-color: #fdeed7;
   --email-cta-bg: #507498;
@@ -106,7 +106,7 @@ header {
 }
 
 .menu-icon {
-  color: var(--icon-color);
+  color: white;
   height: 1.5rem;
   width: 1.5rem;
 }
@@ -213,6 +213,7 @@ header {
 }
 
 .mobile-menu .menu-icon {
+  color: var(--icon-color);
   position: absolute;
   top: 1.4rem;
   right: 2rem;
@@ -439,9 +440,11 @@ main h2 {
   margin-bottom: 1rem;
 }
 
+/*
 .indexTitleAiring, .indexTitleCurrent{
-  /* margin-top: 4rem; */
+   margin-top: 4rem; 
 }
+*/
 
 .airing-soon-desktop-container, .current-movie-desktop-container{
   display:none;
@@ -451,7 +454,7 @@ main h2 {
   width: 100%;
   height: 25rem;
   padding: 1rem 0 0.8rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4.5rem;
   overflow-x: auto;
   display: flex;
   align-items: flex-end;
@@ -467,6 +470,7 @@ main h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 0 0 10px 10px;
 }
 
 .current-movie-carousel div {
@@ -520,13 +524,14 @@ main h2 {
   width: auto;
   height: 300px;
   margin: 0;
+  border-radius: 15px 15px 0 0;
 }
 
 .airing-soon-container {
   width: 100%;
   height: 25rem;
   padding: 1rem 0 0.8rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4.5rem;
   overflow-x: auto;
   display: flex;
   align-items: flex-end;
@@ -549,6 +554,7 @@ main h2 {
   width: auto;
   height: 300px;
   margin: 0;
+  border-radius: 15px 15px 0 0;
 }
 
 .airing-soon-carousel h3 {
@@ -583,6 +589,7 @@ main h2 {
   align-items: center;
   border-radius: 15px;
   border: 0.25rem solid var(--border-color);
+  margin-bottom: 4rem;
 }
 
 .offer-container img {
@@ -730,11 +737,12 @@ footer ul li a {
   }
 
   .hero-desktop-content-container {
-    background-color: var(--hero-bg);
-    width: 47%;
+    background-image: linear-gradient(90deg, var(--nav) 10%, transparent 100%);
+    width: 100%;
     height: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 5;
@@ -742,14 +750,34 @@ footer ul li a {
 
   .hero-desktop-content-container img {
     height: auto;
-    width: 10rem;
+    width: 25rem;
+    position: absolute;
+    top: 7.5rem;
+    left: 3rem;
   }
 
   .hero-desktop-text-content {
-    font-size: 1.25rem;
-    width: 100%;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    position: absolute;
+    top: 12rem;
+    left: 2rem;
+    font-size: 1.35rem;
+    width: 30%;
+    margin-top: 8rem;
+    margin-right: 17rem;
+  }
+
+  .hero-desktop-text-content h3 {
+    color: #fffdf9;
+    margin: 0;
+    padding-left: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .hero-desktop-text-content p {
+    color: #fffdf9;
+    line-height: 1.5;
+    margin: 0;
+    padding-left: 1rem;
   }
 
   .hero-desktop-logo {
@@ -762,12 +790,6 @@ footer ul li a {
   .hero-desktop-logo img {
     width: 100%;
     height: auto;
-  }
-
-  .hero-desktop-text-content {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    text-align: left;
   }
 
   .hero-desktop-buttons {
@@ -809,13 +831,13 @@ footer ul li a {
   .hero-desktop-slideshow {
     position: absolute;
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 92vh;
     overflow: hidden;
   }
 
   .hero-desktop-slide1 {
-    background-image: url("../assets/images/studio-ghibli-hero-1.png"); /* Update images for desktop */
+    background-image: url("../assets/images/hero-desktop4.jpg"); /* Update images for desktop */
     background-size: cover;
     background-position: bottom;
     background-attachment: absolute;
@@ -828,7 +850,7 @@ footer ul li a {
   }
 
   .hero-desktop-slide2 {
-    background-image: url("../assets/images/studio-ghibli-hero-2.png"); /* Update images for desktop */
+    background-image: url("../assets/images/hero-desktop2.jpg"); /* Update images for desktop */
     background-size: cover;
     background-position: bottom;
     background-attachment: absolute;
@@ -841,7 +863,7 @@ footer ul li a {
   }
 
   .hero-desktop-slide3 {
-    background-image: url("../assets/images/studio-ghibli-hero-3.png"); /* Update images for desktop */
+    background-image: url("../assets/images/hero-desktop3.png"); /* Update images for desktop */
     background-size: cover;
     background-position: bottom;
     background-attachment: absolute;
@@ -854,7 +876,7 @@ footer ul li a {
   }
 
   .hero-desktop-slide4 {
-    background-image: url("../assets/images/studio-ghibli-hero-4.png"); /* Update images for desktop */
+    background-image: url("../assets/images/hero-desktop1.jpg"); /* Update images for desktop */
     background-size: cover;
     background-position: bottom;
     background-attachment: absolute;
@@ -992,6 +1014,53 @@ footer ul li a {
     border-radius: 40px;
   }
 
+  
+  .menu-icon-switch-desktop {
+  color: white;
+  position: absolute;
+  right: 4rem !important;
+  left: auto;
+  top: 1.2rem !important;
+  height: 25px;
+  width: 25px;
+
+  /* Disable text selection and tap highlight */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  }
+
+  .menu-icon-switch-desktop:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+
+.menu-icon-switch-desktop svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 25px;
+  width: 25px;
+  transition: opacity 0.3s ease;
+}
+
+.menu-icon-switch-desktop svg:last-child {
+  display: none;
+  opacity: 0;
+}
+
+.dark-mode .menu-icon-switch-desktop svg:first-child {
+  display: none;
+  opacity: 0;
+}
+
+.dark-mode .menu-icon-switch-desktop svg:last-child {
+  display: block;
+  opacity: 1;
+}
+  
+
   .cinema-ghibli-logo img {
     height: 8rem;
     width: 12rem;
@@ -1059,6 +1128,7 @@ footer ul li a {
     width: 14rem;
     height: 19rem;
     margin: 0;
+    border-radius: 10px 10px 0 0;
   }
 
   .airing-soon-desktop-container h3, .current-movie-desktop-container h3 {

@@ -1,6 +1,7 @@
 let darkMode = localStorage.getItem('darkMode');
 
-const darkModeToggle = document.querySelector('.menu-icon-switch');
+const darkModeToggleMobile = document.querySelector('.menu-icon-switch');
+const darkModeToggleDesktop = document.querySelector('.menu-icon-switch-desktop')
 
 const enableDarkMode = () => {
     document.body.classList.add('dark-mode');
@@ -16,11 +17,14 @@ if (darkMode === 'enabled') {
     enableDarkMode();
 }
 
-darkModeToggle.addEventListener('click', () => {
+const toggleDarkMode = () => {
     darkMode = localStorage.getItem('darkMode');
     if (darkMode !== 'enabled') {
         enableDarkMode();
     } else {
         disableDarkMode();
     }
-});
+}
+
+darkModeToggleMobile.addEventListener('click', toggleDarkMode);
+darkModeToggleDesktop.addEventListener('click', toggleDarkMode);

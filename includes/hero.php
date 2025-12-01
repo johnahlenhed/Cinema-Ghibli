@@ -48,8 +48,13 @@
             <img src="/assets/images/cinema-ghibli-logo-light.svg" alt="">
 
             <div class="hero-desktop-text-content">
-                <p>Enter a place where soot sprites dance, forests whisper, and skies stretch endlessly.
-                    Our cinema is devoted exclusively to Studio Ghibli films, offering a cozy sanctuary for fans to reconnect with the magic of animation.</p>
+                <h3>Welcome to the only cinema dedicated entirely to Studio Ghibli’s unforgettable films.</h3>
+                <br>
+
+                <p>
+                    We bring every story to life on the big screen, from beloved classics to rare gems.
+                    Experience the artistry, atmosphere, and emotion the way it was meant to be seen.
+                    Join us for screenings that turn timeless animation into a truly cinematic event.</p>
             </div>
 
         </div>

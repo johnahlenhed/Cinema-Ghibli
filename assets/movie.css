@@ -209,7 +209,7 @@ table th{
 }
 
 .time button {
-    background-color:var(--bg-tick);
+    background-color:var(--container);
     height: 112px;
 }
 
