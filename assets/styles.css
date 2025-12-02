@@ -12,10 +12,10 @@
   --date-tick: #a9ddfb;
   --bg-tick: #c7e2db;
   --cta: #e65478;
-  --hero-bg: #3e727a89;
+  --hero-bg: #3e727a;
   --border-color: #033856;
   --footer-font-color: #fdeed7;
-  --email-cta-bg: #A0C3E6;
+  --email-cta-bg: #a0c3e6;
   --carousel-p-color: #504d47;
   --carousel-line-color: #109ceb;
   --navbar-font-color: #fbf9f5;
@@ -30,13 +30,13 @@
   --background: #061524;
   --font-color: #fffdf9;
   --icon-color: white;
-  --nav: #084d75;
+  --nav: #13273b;
   --container: #13273b;
   --line: #e65478;
   --date-tick: #6f7fb3;
   --bg-tick: #131f44;
   --cta: #e65478;
-  --hero-bg: #3e727a89;
+  --hero-bg: #3e727a;
   --border-color: #fdeed7;
   --footer-font-color: #fdeed7;
   --email-cta-bg: #507498;
@@ -106,7 +106,7 @@ header {
 }
 
 .menu-icon {
-  color: var(--icon-color);
+  color: white;
   height: 1.5rem;
   width: 1.5rem;
 }
@@ -213,6 +213,7 @@ header {
 }
 
 .mobile-menu .menu-icon {
+  color: var(--icon-color);
   position: absolute;
   top: 1.4rem;
   right: 2rem;
@@ -222,7 +223,7 @@ header {
   body {
     font-size: 18px;
   }
- #indexMain{
+  #indexMain {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -434,24 +435,29 @@ main h2 {
   font-weight: bold;
   font-size: 3em;
 }
-.indexTitle, .indexTitleAiring, .indexTitleCurrent {
+.indexTitle,
+.indexTitleAiring,
+.indexTitleCurrent {
   text-align: center;
   margin-bottom: 1rem;
 }
 
+/*
 .indexTitleAiring, .indexTitleCurrent{
-  /* margin-top: 4rem; */
+   margin-top: 4rem; 
 }
+*/
 
-.airing-soon-desktop-container, .current-movie-desktop-container{
-  display:none;
+.airing-soon-desktop-container,
+.current-movie-desktop-container {
+  display: none;
 }
 
 .current-movie-container {
   width: 100%;
   height: 25rem;
   padding: 1rem 0 0.8rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4.5rem;
   overflow-x: auto;
   display: flex;
   align-items: flex-end;
@@ -467,6 +473,7 @@ main h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 0 0 10px 10px;
 }
 
 .current-movie-carousel div {
@@ -510,7 +517,8 @@ main h2 {
   text-align: center;
 }
 
-.carousel-line, .desktop-line {
+.carousel-line,
+.desktop-line {
   width: 70%;
   height: 1px;
   background-color: var(--carousel-line-color);
@@ -520,13 +528,14 @@ main h2 {
   width: auto;
   height: 300px;
   margin: 0;
+  border-radius: 15px 15px 0 0;
 }
 
 .airing-soon-container {
   width: 100%;
   height: 25rem;
   padding: 1rem 0 0.8rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4.5rem;
   overflow-x: auto;
   display: flex;
   align-items: flex-end;
@@ -549,6 +558,7 @@ main h2 {
   width: auto;
   height: 300px;
   margin: 0;
+  border-radius: 15px 15px 0 0;
 }
 
 .airing-soon-carousel h3 {
@@ -583,6 +593,7 @@ main h2 {
   align-items: center;
   border-radius: 15px;
   border: 0.25rem solid var(--border-color);
+  margin-bottom: 4rem;
 }
 
 .offer-container img {
@@ -699,13 +710,14 @@ footer ul li a {
 }
 
 @media screen and (min-width: 768px) {
-
   /* titles */
-  .indexTitleAiring, .indexTitleCurrent{
+  .indexTitleAiring,
+  .indexTitleCurrent {
     margin-top: 6rem;
+    margin-bottom: 5rem;
   }
   /* general */
-  main{
+  main {
     padding: 0 6rem;
     flex-direction: column;
     justify-items: center;
@@ -730,26 +742,43 @@ footer ul li a {
   }
 
   .hero-desktop-content-container {
-    background-color: var(--hero-bg);
-    width: 47%;
-    height: 100%;
+    background-image: linear-gradient(90deg, var(--nav) 35%, transparent 100%);
+    width: 100%;
+    height: 89.5vh;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
     z-index: 5;
   }
 
   .hero-desktop-content-container img {
     height: auto;
-    width: 10rem;
+    width: 25rem;
+    margin-top: 4rem;
+    margin-left: 3rem;
   }
 
   .hero-desktop-text-content {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
+    width: 45%;
+    height: 89.5vh;
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+
+  .hero-desktop-text-content h3 {
+    color: #fffdf9;
     width: 100%;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    padding-left: 1rem;
+    margin-top: 3rem;
+  }
+
+  .hero-desktop-text-content p {
+    color: #fffdf9;
+    width: 100%;
+    line-height: 1.5;
+    margin: 0;
+    padding-left: 1rem;
   }
 
   .hero-desktop-logo {
@@ -764,58 +793,16 @@ footer ul li a {
     height: auto;
   }
 
-  .hero-desktop-text-content {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    text-align: left;
-  }
-
-  .hero-desktop-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .hero-desktop-button-upcoming {
-    font-family: "Libre Baskerville", serif;
-    background-color: transparent;
-    color: var(--font-color);
-    border: 2px solid var(--font-color);
-    text-align: center;
-    height: 45px;
-    width: 130px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-
-  .hero-desktop-button-movies {
-    font-family: "Libre Baskerville", serif;
-    background-color: transparent;
-    color: var(--font-color);
-    border: 2px solid var(--font-color);
-    text-align: center;
-    height: 45px;
-    width: 130px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-
   .hero-desktop-slideshow {
     position: absolute;
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 92vh;
     overflow: hidden;
   }
 
   .hero-desktop-slide1 {
-    background-image: url("../assets/images/studio-ghibli-hero-1.png"); /* Update images for desktop */
+    background-image: url("../assets/images/hero-desktop4.jpg"); /* Update images for desktop */
     background-size: cover;
     background-position: bottom;
     background-attachment: absolute;
@@ -828,7 +815,7 @@ footer ul li a {
   }
 
   .hero-desktop-slide2 {
-    background-image: url("../assets/images/studio-ghibli-hero-2.png"); /* Update images for desktop */
+    background-image: url("../assets/images/hero-desktop2.jpg"); /* Update images for desktop */
     background-size: cover;
     background-position: bottom;
     background-attachment: absolute;
@@ -841,7 +828,7 @@ footer ul li a {
   }
 
   .hero-desktop-slide3 {
-    background-image: url("../assets/images/studio-ghibli-hero-3.png"); /* Update images for desktop */
+    background-image: url("../assets/images/hero-desktop3.png"); /* Update images for desktop */
     background-size: cover;
     background-position: bottom;
     background-attachment: absolute;
@@ -854,7 +841,7 @@ footer ul li a {
   }
 
   .hero-desktop-slide4 {
-    background-image: url("../assets/images/studio-ghibli-hero-4.png"); /* Update images for desktop */
+    background-image: url("../assets/images/hero-desktop1.jpg"); /* Update images for desktop */
     background-size: cover;
     background-position: bottom;
     background-attachment: absolute;
@@ -976,7 +963,7 @@ footer ul li a {
     background-color: var(--nav);
     height: 4rem;
     padding: 0 2rem;
-    box-shadow: 0 2.5rem 1rem 1px #00000025;;
+    box-shadow: 0 2.5rem 1rem 1px #00000025;
   }
 
   .desktop-navbar a {
@@ -992,57 +979,109 @@ footer ul li a {
     border-radius: 40px;
   }
 
+  .menu-icon-switch-desktop {
+    color: white;
+    position: absolute;
+    right: 4rem !important;
+    left: auto;
+    top: 1.2rem !important;
+    height: 25px;
+    width: 25px;
+
+    /* Disable text selection and tap highlight */
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  .menu-icon-switch-desktop:hover {
+    cursor: pointer;
+    scale: 1.1;
+  }
+
+  .menu-icon-switch-desktop svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 25px;
+    width: 25px;
+    transition: opacity 0.3s ease;
+  }
+
+  .menu-icon-switch-desktop svg:last-child {
+    display: none;
+    opacity: 0;
+  }
+
+  .dark-mode .menu-icon-switch-desktop svg:first-child {
+    display: none;
+    opacity: 0;
+  }
+
+  .dark-mode .menu-icon-switch-desktop svg:last-child {
+    display: block;
+    opacity: 1;
+  }
+
   .cinema-ghibli-logo img {
     height: 8rem;
     width: 12rem;
   }
 
   /* order */
-  .offer-container{
+  .offer-container {
     order: 1;
   }
 
-  .cta-container{
+  .cta-container {
     order: 3;
   }
 
-  .airing-soon-desktop-container, .indexTitleAiring{
+  .airing-soon-desktop-container,
+  .indexTitleAiring {
     order: 2;
   }
 
-  /* Footer */
-
-  footer ul, footer li{
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  footer ul li a {
-    font-size: 1.5rem;
-    margin: 1rem 0;
-  }
-
-    /* Airing soon */
-  .current-movie-container, .airing-soon-container{
+  /* Airing soon */
+  .current-movie-container,
+  .airing-soon-container {
     display: none;
   }
-  .airing-soon-desktop-container, .current-movie-desktop-container{
+
+  .current-movie-desktop-container {
     height: auto;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    gap: 5rem;
+    justify-content: center;
     align-items: center;
-    gap: 80px;
-    max-width: 1000px;
-    margin: 4rem 0;
+    max-width: 100%;
+    width: 80%;
+    margin-bottom: 10rem;
   }
 
-  .indexTitleAiring{
+  .airing-soon-desktop-container {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: 80%;
+    margin-bottom: 10rem;
+  }
+
+  .indexTitleAiring {
     justify-content: center;
     display: flex;
   }
 
-  .airing-soon-desktop-card, .current-movie-desktop-card{
+  .airing-soon-desktop-card,
+  .current-movie-desktop-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1050,29 +1089,58 @@ footer ul li a {
     width: 14rem;
     background-color: var(--container);
     border-radius: 15px;
-    box-shadow: 0px 0px 4px 0px #00000025;
+    box-shadow: 0px 0px 10px 10px #00000025;
   }
-  .airing-soon-desktop-card p, .current-movie-desktop-card p{
-    font-size: 0.90rem;
+
+  .airing-soon-desktop-card:hover,
+  .current-movie-desktop-card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
   }
-  .airing-soon-desktop-card img, .current-movie-desktop-container img {
+
+  .airing-soon-desktop-card p,
+  .current-movie-desktop-card p {
+    font-size: 0.9rem;
+  }
+  .airing-soon-desktop-card img,
+  .current-movie-desktop-container img {
     width: 14rem;
     height: 19rem;
     margin: 0;
+    border-radius: 10px 10px 0 0;
   }
 
-  .airing-soon-desktop-container h3, .current-movie-desktop-container h3 {
+  .airing-soon-desktop-container h3,
+  .current-movie-desktop-container h3 {
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 0.9vw;
     text-align: center;
     margin: 0;
-    margin-top: 0.4rem;
+    margin-top: 0.9rem;
+    padding-bottom: 0.5rem;
   }
 
-  .airing-soon-desktop-container p, .current-movie-desktop-container p {
+  .airing-soon-desktop-container p,
+  .current-movie-desktop-container p {
     color: var(--carousel-p-color);
     text-align: center;
     margin: 0;
     padding-top: 0.2rem;
+    padding-bottom: 0.5rem;
+  }
+
+  /* Footer */
+
+  footer ul,
+  footer li {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  footer ul li a {
+    font-size: 1.5rem;
+    margin: 1rem 0;
   }
 }

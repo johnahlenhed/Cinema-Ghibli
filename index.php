@@ -6,7 +6,7 @@
 
     <h2 class="indexTitleCurrent">Current Movies</h2>
 
-     <!-- mobile current airing -->
+    <!-- mobile current airing -->
     <section class="current-movie-container">
 
         <?php
@@ -15,11 +15,11 @@
         foreach ($current_movies as $title => $movie) { ?>
             <div class="current-movie-carousel">
                 <a href="movie.php" class="movie-link">
-                <img src="<?php echo $movie['poster']; ?>" alt="">
-                <h3><?php echo $title; ?></h3>
-                <p><?php echo $movie['jp-title']; ?></p>
-                <div class="carousel-line"></div>
-                <p><?php echo implode(", ", $movie['genre']); ?></p>
+                    <img src="<?php echo $movie['poster']; ?>" alt="">
+                    <h3><?php echo $title; ?></h3>
+                    <p><?php echo $movie['jp-title']; ?></p>
+                    <div class="carousel-line"></div>
+                    <p><?php echo implode(", ", $movie['genre']); ?></p>
                 </a>
             </div>
 
@@ -29,6 +29,17 @@
 
         </div>
     </section>
+
+    <div class="offer-container">
+        <img src="/assets/images/popcorn.png" alt="Popcorn">
+
+        <h2 class="indexTitle">Right now!</h2>
+
+        <p> If you buy a ticket now, you can get a chance to win an exclusive customized popcorn bucket
+            themed after you favorite movies and characters!</p>
+
+        <p>*only available this week</p>
+    </div>
 
     <!-- desktop current airing -->
     <section class="current-movie-desktop-container">
@@ -39,11 +50,11 @@
         foreach ($current_movies as $title => $movie) { ?>
             <div class="current-movie-desktop-card">
                 <a href="movie.php" class="movie-link">
-                <img src="<?php echo $movie['poster']; ?>" alt="">
-                <h3><?php echo $title; ?></h3>
-                <p><?php echo $movie['jp-title']; ?></p>
-                <div class="desktop-line"></div>
-                <p><?php echo implode(", ", $movie['genre']); ?></p>
+                    <img src="<?php echo $movie['poster']; ?>" alt="">
+                    <h3><?php echo $title; ?></h3>
+                    <p><?php echo $movie['jp-title']; ?></p>
+                    <div class="desktop-line"></div>
+                    <p><?php echo implode(", ", $movie['genre']); ?></p>
                 </a>
             </div>
 
@@ -53,11 +64,11 @@
 
         </div>
     </section>
-    
+
 
     <h2 class="indexTitleAiring">Airing Soon</h2>
 
-     <!-- mobile airing soon -->
+    <!-- mobile airing soon -->
     <section class="airing-soon-container">
 
         <?php
@@ -79,7 +90,7 @@
 
     <!-- desktop airing soon -->
     <section class="airing-soon-desktop-container">
-            <?php
+        <?php
         include __DIR__ . '/assets/data.php';
 
         foreach ($upcoming_movies as $title => $movie) { ?>
@@ -95,17 +106,6 @@
         }
         ?>
     </section>
-
-    <div class="offer-container">
-        <img src="/assets/images/popcorn.png" alt="Popcorn">
-
-        <h2 class="indexTitle">Right now!</h2>
-
-        <p> If you buy a ticket now, you can get a chance to win an exclusive customized popcorn bucket
-            themed after you favorite movies and characters!</p>
-
-        <p>*only available this week</p>
-    </div>
 
     <div class="cta-container">
         <h2 class="indexTitle">HELLO MOVIE FAN!</h2>
