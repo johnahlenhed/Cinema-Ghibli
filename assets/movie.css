@@ -1,0 +1,243 @@
+/* - GENNERL - */
+
+#infoContainer {
+    background-color: var(--container);
+}
+section {
+    padding: 2rem 2rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+    section {
+        padding: 2rem 2rem;
+        margin: 1rem 1rem;
+    }
+    #infoContainer {
+        box-shadow: 0px 0px 4px 0px #00000025;
+    }
+}
+
+.line {
+    display: block;
+    width: 120px;
+    height: 2px;
+    background-color: var( --line);
+    margin-bottom: 2rem;
+}
+
+/* - TYPOGRPHY - */
+
+main h2 {
+    margin: 0;
+    text-align: left;
+}
+
+main h3{
+    font-size: 3em;
+    font-weight: bold;
+}
+main h3{
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* - Title - */
+
+.movieTitle{
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+.movieTitle h2 {
+    margin: 0.5rem 0;
+    font-size: 3em;
+}
+
+.movieTitle div{
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+.ageRating{
+    border: 1px solid var(--font-color);
+    padding: 3px;
+    border-radius: 20%;
+}
+
+@media screen and (min-width: 800px) {
+    .movieTitle {
+    float: left;
+    }
+    .line {
+    width: 160px;
+}
+}
+
+/* - TRAILER - */
+
+ .trailer{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+  margin-bottom: 1rem;
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 800px) {
+    .trailer{
+        width: 100%; 
+        margin-bottom: 2rem;
+    }
+}
+
+/* - SYNOPSIS - */
+
+.synopsis p{
+    margin: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+}
+
+
+/* - CAST - */
+
+.cast {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.castTable {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.castTable table {
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 0.6rem 0;
+}
+
+table th{
+    text-wrap: nowrap;
+    padding-top: 1.5rem;
+}
+
+@media screen and (min-width: 800px) {
+    .castTable table {
+    width: 200px;
+    }
+}
+/* - SYNOPSIS - */
+
+.synopsis p{
+    margin: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+}
+
+
+/* - BOOKING - */
+
+.booking{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: column;
+    width: 100%;
+}
+
+.booking button {
+    display: inline-block;
+    border: 2px solid var(--date-tick);
+    border-radius: 10px;
+    padding: 4px 24px;
+    margin: 20px 1rem;
+    width: 114px;
+    text-align: center;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+    font-family: var(--font-family);
+}
+
+.booking p{
+    color: var(--font-color);
+}
+
+/* date button */
+
+.date button:hover {
+    border: 2px solid var(--font-color);
+}
+
+.date button {
+    background-color:var(--container);
+    height: 83px;
+}
+
+.date button.active{
+    background-color: var(--date-tick);
+}
+
+/* time button */
+
+.time button:hover {
+    border: 2px solid var(--font-color);
+}
+
+.time button {
+    background-color:var(--container);
+    height: 112px;
+}
+
+.time button:focus {
+    background-color:var(--date-tick);
+}
+
+@media screen and (min-width: 800px) {
+
+    .booking button {
+        margin: 1rem 0.5rem;
+    }
+    .castBookingContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        width: 100%;
+    }
+    .cast, .booking {
+        width: 47.5%; 
+    }
+    .cast {
+        margin-right: 0.5rem;
+    }
+    .booking { 
+        margin-left: 0.5rem;
+    }
+    table th, table td {
+        padding: 1rem 0;
+    }
+}
