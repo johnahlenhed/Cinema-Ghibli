@@ -116,7 +116,7 @@ $upcoming_movies = [
             "Slice of life"
         ],
     ],
-    "The Tale of the Princess Kaguya" => [
+    "Princess Kaguya" => [
         "poster" => "https://upload.wikimedia.org/wikipedia/en/6/68/The_Tale_of_the_Princess_Kaguya_%28poster%29.jpg",
         "jp-title" => "かぐや姫の物語",
         "genre" => [

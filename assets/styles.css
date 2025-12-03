@@ -66,8 +66,8 @@ body {
   display: none;
 }
 
-.hero-desktop-content-container {
-  display: none;
+.hero-desktop-content-container, .hero-desktop-overlay {
+  visibility: hidden;
 }
 
 header {
@@ -233,6 +233,10 @@ header {
 .hero {
   width: 100%;
   height: auto;
+}
+
+.hero-desktop-content-container {
+  display: none;
 }
 
 .hero-overlay {
@@ -736,13 +740,15 @@ footer ul li a {
   }
 
   .hero-desktop-overlay {
+    visibility: visible;
     position: relative;
     width: 100%;
     height: 89.5vh;
   }
 
   .hero-desktop-content-container {
-    background-image: linear-gradient(90deg, var(--nav) 35%, transparent 100%);
+    background-image: linear-gradient(90deg, #033856b0 30%, transparent 100%);
+    visibility: visible;
     width: 100%;
     height: 89.5vh;
     display: flex;
@@ -752,17 +758,16 @@ footer ul li a {
   }
 
   .hero-desktop-content-container img {
-    height: auto;
     width: 25rem;
-    margin-top: 4rem;
     margin-left: 3rem;
+    margin-top: 4rem;
   }
 
   .hero-desktop-text-content {
     font-size: 1.35rem;
-    width: 45%;
-    height: 89.5vh;
-    margin-top: 2rem;
+    width: 40%;
+    height: 60%;
+    margin-top: 3rem;
     margin-left: 2rem;
   }
 
@@ -1089,7 +1094,7 @@ footer ul li a {
     width: 14rem;
     background-color: var(--container);
     border-radius: 15px;
-    box-shadow: 0px 0px 10px 10px #00000025;
+    box-shadow: 0px 0px 10px 0 #00000025;
   }
 
   .airing-soon-desktop-card:hover,
